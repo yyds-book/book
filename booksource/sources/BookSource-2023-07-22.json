@@ -1,0 +1,1072 @@
+[
+  {
+    "remark" : "站类F",
+    "bookDetailRule" : {
+      "nameXpath" : "\/\/div[@class='itemtxt']\/h1\/a",
+      "categoryXpath" : "\/\/div[@class='itemtxt']\/p[1]\/span[2]",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='list']\/\/li"
+      },
+      "introXpath" : "\/\/div[@class='des bb']",
+      "authorXpath" : "substring-after(\/\/div[@class='itemtxt']\/p[2]\/a, '：')",
+      "coverXpath" : "\/\/div[@class='item']\/a\/img\/@src"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='gmenu']\/ul\/li[position()>4]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "最新更新",
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "nameXpath" : "p\/a",
+          "listXpath" : "\/\/ul[@class='list top clear']\/li",
+          "groupTitleFixed" : "热门小说",
+          "urlXpath" : "a\/@href",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.3uxiaoshuo.com\/tag\/?key=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+        "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+        "listXpath" : "\/\/div[@class='item']",
+        "urlXpath" : "a\/@href",
+        "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+        "nameXpath" : "\/\/h3\/a",
+        "coverXpath" : "\/\/img\/@src"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.3uxiaoshuo.com\/xiaoshuo\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='con']"
+    },
+    "name" : "三优小说网",
+    "url" : "https:\/\/www.3uxiaoshuo.com\/"
+  },
+  {
+    "remark" : "站类E",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "@title",
+        "urlXpath" : "@href",
+        "listXpath" : "\/\/div[@id='list']\/\/a"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:lastest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/a",
+          "updatedAtXpath" : "dl\/div\/em[2]",
+          "listXpath" : "\/\/div[@class='hotcontent'][1]\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a",
+          "coverXpath" : "\/\/img\/@data-original"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "dl\/div\/a",
+          "updatedAtXpath" : "dl\/div\/em[2]",
+          "listXpath" : "\/\/div[@class='hotcontent'][2]\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a",
+          "coverXpath" : "\/\/img\/@data-original"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/nav[@class='nav']\/ul\/li[position()>2 and position()<last()]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='>>']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/text()",
+          "coverXpath" : "\/\/img\/@data-original",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2\/a",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "i",
+          "groupXpath" : "\/\/div[@class='content']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/div[@class='l']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a",
+          "categoryXpath" : "span[1]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.shuku99.com\/search\/?searchkey=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "authorXpath" : "dl\/div\/a",
+        "updatedAtXpath" : "dl\/div\/em[2]",
+        "listXpath" : "\/\/div[@class='item']",
+        "urlXpath" : "dl\/dt\/a\/@href",
+        "introXpath" : "dl\/dd",
+        "nameXpath" : "dl\/dt\/a",
+        "coverXpath" : "\/\/img\/@data-original"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.shuku99.com\/book\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[@id='next_url' and text()=' 下一页']\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@id='booktxt']"
+    },
+    "name" : "书库网",
+    "url" : "https:\/\/www.shuku99.com\/"
+  },
+  {
+    "remark" : "站类E",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "chapterPageURLXpath" : "\/\/a[@class='chapterlist']\/@href",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "dd",
+        "listXpath" : "\/\/div[@id='content_1']\/a",
+        "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+        "urlXpath" : "@href"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/a",
+          "updatedAtXpath" : "dl\/div\/em[2]",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a",
+          "coverXpath" : "\/\/img\/@data-original"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/div[@class='l']\/\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/nav[@class='nav']\/ul\/li[position()>1 and position()<last()-2]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='>>']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/text()",
+          "coverXpath" : "\/\/img\/@data-original",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2\/a",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "i",
+          "groupXpath" : "\/\/div[@class='content']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/div[@class='l']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a",
+          "categoryXpath" : "span[1]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.xbookben.org\/search\/?searchkey=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "authorXpath" : "dl\/div\/a",
+        "updatedAtXpath" : "dl\/div\/em[2]",
+        "listXpath" : "\/\/div[@class='item']",
+        "urlXpath" : "dl\/dt\/a\/@href",
+        "introXpath" : "dl\/dd",
+        "nameXpath" : "dl\/dt\/a",
+        "coverXpath" : "\/\/img\/@data-original"
+      }
+    },
+    "bookURLRegex" : "http:\/\/www.xbookben.org\/txt\/\\d+\\.html",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "contentXpath" : "\/\/div[@id='booktxt']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "本章未完，点击下一页继续阅读。"
+    },
+    "name" : "书本网",
+    "url" : "http:\/\/www.xbookben.org\/"
+  },
+  {
+    "remark" : "站类A",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='pc']"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/div[@class='cover']\/img\/@data-src",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:lastest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "\/\/img\/@data-src",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='nav']\/ul\/\/li[position()>1]"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "\/\/img\/@data-src",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleXpath" : "h2",
+          "groupXpath" : "\/\/div[@class='block']",
+          "coverXpath" : "\/\/img\/@data-src",
+          "listXpath" : "div[@class='block_top']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "span[2]\/a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2",
+          "urlXpath" : "span[2]\/a\/@href",
+          "authorXpath" : "span[3]",
+          "groupXpath" : "\/\/div[@class='block']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/div[@class='l bd']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/wap.fdsrxx.com\/search\/?searchkey=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "lastChapterXpath" : "\/\/div[@class='update']\/a",
+        "authorXpath" : "substring-after(\/\/div[@class='author'], '：')",
+        "updatedAtXpath" : "substring-after(\/\/div[@class='uptime'], '：')",
+        "listXpath" : "\/\/div[@class='box']",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "coverXpath" : "\/\/img\/@data-src",
+        "nameXpath" : "\/\/h4\/a",
+        "categoryXpath" : "substring-after(\/\/div[@class='cat'], '：')"
+      }
+    },
+    "bookURLRegex" : "https:\/\/wap.fdsrxx.com\/\\d+_\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[@id='next_url' and text()='下一页']\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@id='TextContent']"
+    },
+    "name" : "巅峰小说网",
+    "url" : "https:\/\/wap.fdsrxx.com\/"
+  },
+  {
+    "remark" : "站类F",
+    "bookDetailRule" : {
+      "nameXpath" : "\/\/div[@class='itemtxt']\/h1\/a",
+      "categoryXpath" : "\/\/div[@class='itemtxt']\/p[1]\/span[2]",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='list']\/\/li"
+      },
+      "introXpath" : "\/\/div[@class='des bb']",
+      "authorXpath" : "substring-after(\/\/div[@class='itemtxt']\/p[2]\/a, '：')",
+      "coverXpath" : "\/\/div[@class='item']\/a\/img\/@src"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='gmenu']\/ul\/li[position()>4]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "最新更新",
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "nameXpath" : "p\/a",
+          "listXpath" : "\/\/ul[@class='list top clear']\/li",
+          "groupTitleFixed" : "热门小说",
+          "urlXpath" : "a\/@href",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.deqixs.com\/tag\/?key=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+        "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+        "listXpath" : "\/\/div[@class='item']",
+        "urlXpath" : "a\/@href",
+        "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+        "nameXpath" : "\/\/h3\/a",
+        "coverXpath" : "\/\/img\/@src"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.deqixs.com\/xiaoshuo\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='con']"
+    },
+    "name" : "得奇小说网",
+    "url" : "https:\/\/www.deqixs.com\/"
+  },
+  {
+    "remark" : "站类D",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "listXpath" : "\/\/div[@id='list-chapterAll']\/dd",
+        "nextPageURLXpath" : "\/\/a[@class='next' and text()='>']\/@href",
+        "urlXpath" : "a\/@href"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "substring-after(\/\/div[@class='author'][1], '：')",
+          "listXpath" : "\/\/div[@class='p10']",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "lastChapterXpath" : "\/\/div[@class='cat']\/a",
+          "nameXpath" : "\/\/h4\/a",
+          "introXpath" : "\/\/div[@class='update']\/text()"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "text()",
+        "urlXpath" : "@href",
+        "listXpath" : "\/\/div[@class='header-nav']\/a[position()=2 or position()=4 or position()=5]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[@class='next' and text()='>']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[5]",
+          "updatedAtXpath" : "span[4]",
+          "listXpath" : "\/\/div[@id='gengxin']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "bookListRule" : {
+        "nameXpath" : "\/\/h4\/a",
+        "listXpath" : "\/\/div[@class='p10']",
+        "lastChapterXpath" : "\/\/div[@class='cat']\/a",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "authorXpath" : "substring-after(\/\/div[@class='author'][1], '：')",
+        "introXpath" : "\/\/div[@class='update']\/text()"
+      },
+      "method" : "POST",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.duanqiufeng.com\/modules\/article\/search.php",
+      "params" : "searchkey=%s&action=login&searchtype=all&submit=",
+      "keyEncoding" : "UTF-8"
+    },
+    "bookURLRegex" : "http:\/\/www.duanqiufeng.com\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[@id='linkNext' and text()='下一页']\/@href",
+      "contentXpath" : "\/\/div[@class='readcontent']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "↑返回顶部↑"
+    },
+    "name" : "断秋风",
+    "url" : "http:\/\/www.duanqiufeng.com\/"
+  },
+  {
+    "remark" : "站类F",
+    "bookDetailRule" : {
+      "nameXpath" : "\/\/div[@class='itemtxt']\/h1\/a",
+      "categoryXpath" : "\/\/div[@class='itemtxt']\/p[1]\/span[2]",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='list']\/\/li"
+      },
+      "introXpath" : "\/\/div[@class='des bb']",
+      "authorXpath" : "substring-after(\/\/div[@class='itemtxt']\/p[2]\/a, '：')",
+      "coverXpath" : "\/\/div[@class='item']\/a\/img\/@src"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@id='gmenu']\/ul\/li[position()>4]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "最新更新",
+          "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+          "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "a\/@href",
+          "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+          "nameXpath" : "\/\/h3\/a",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "nameXpath" : "p\/a",
+          "listXpath" : "\/\/ul[@class='list top clear']\/li",
+          "groupTitleFixed" : "热门小说",
+          "urlXpath" : "a\/@href",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.wcxs5.com\/tag\/?key=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "authorXpath" : "substring-after(\/\/p[2]\/a, '：')",
+        "updatedAtXpath" : "\/\/ul\/li[1]\/i",
+        "listXpath" : "\/\/div[@class='item']",
+        "urlXpath" : "a\/@href",
+        "lastChapterXpath" : "\/\/ul\/li[1]\/a",
+        "nameXpath" : "\/\/h3\/a",
+        "coverXpath" : "\/\/img\/@src"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.wcxs5.com\/xiaoshuo\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='con']"
+    },
+    "name" : "无错小说屋",
+    "url" : "https:\/\/www.wcxs5.com\/"
+  },
+  {
+    "remark" : "站类B",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@name='description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/li[@class='list-group-item']"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "substring-after(\/\/h5, '：')",
+          "coverXpath" : "img\/@data-original",
+          "listXpath" : "\/\/div[@class='media clearfix']",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "introXpath" : "\/\/p",
+          "nameXpath" : "\/\/h4\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='col-3']"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[@class='page-link' and @title='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "nameXpath" : "\/\/p",
+          "listXpath" : "\/\/div[@class='card']",
+          "groupTitleFixed" : "推荐小说",
+          "urlXpath" : "a\/@href",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "substring-after(\/\/h5, '：')",
+          "coverXpath" : "img\/@data-original",
+          "listXpath" : "\/\/div[@class='media clearfix']",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "introXpath" : "\/\/p",
+          "nameXpath" : "\/\/h4\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.huanhuanzw.com\/search.php?search=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "\/\/h4\/a",
+        "listXpath" : "\/\/div[@class='media clearfix']",
+        "introXpath" : "\/\/p",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "authorXpath" : "substring-after(\/\/h5, '：')",
+        "coverXpath" : "img\/@src"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.huanhuanzw.com\/book\/.+html",
+    "chapterDetailRule" : {
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='content']"
+    },
+    "name" : "欢欢中文",
+    "url" : "https:\/\/www.huanhuanzw.com\/"
+  },
+  {
+    "remark" : "站类A",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "listXpath" : "\/\/div[@class='section-box'][2]\/\/li",
+        "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+        "urlXpath" : "a\/@href"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:lastest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd\/a",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/ul[@class='txt-list txt-list-row5']\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/ul[@class='nav']\/li[position()>2 and position()<last()-3]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd\/a",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleXpath" : "h2",
+          "groupXpath" : "\/\/div[@class='tp-box']",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "div[@class='top']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "di\/dd\/a",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "substring-after(text(), '\/')",
+          "groupXpath" : "\/\/div[@class='tp-box']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/ul[@class='txt-list txt-list-row5']\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.booksos.net\/ar.php?keyWord=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "span[2]\/a",
+        "listXpath" : "\/\/ul[@class='txt-list txt-list-row5']\/li[position()>1]",
+        "updatedAtXpath" : "span[5]",
+        "lastChapterXpath" : "span[3]\/a",
+        "urlXpath" : "span[2]\/a\/@href",
+        "authorXpath" : "span[4]"
+      }
+    },
+    "bookURLRegex" : "http:\/\/www.booksos.net\/bqg\/\\d+\/",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "contentXpath" : "\/\/div[@id='content']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "read\\d{1}\\(\\);|（本章未完，请点击下一页继续阅读）"
+    },
+    "name" : "求书网",
+    "url" : "http:\/\/www.booksos.net\/"
+  },
+  {
+    "remark" : "站类B",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@name='description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/li[@class='list-group-item']"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "substring-after(\/\/h5, '：')",
+          "coverXpath" : "img\/@data-original",
+          "listXpath" : "\/\/div[@class='media clearfix']",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "introXpath" : "\/\/p",
+          "nameXpath" : "\/\/h4\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='col-3']"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[@class='page-link' and @title='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "nameXpath" : "\/\/p",
+          "listXpath" : "\/\/div[@class='card']",
+          "groupTitleFixed" : "推荐小说",
+          "urlXpath" : "a\/@href",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "substring-after(\/\/h5, '：')",
+          "coverXpath" : "img\/@data-original",
+          "listXpath" : "\/\/div[@class='media clearfix']",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "introXpath" : "\/\/p",
+          "nameXpath" : "\/\/h4\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.canghaibook.com\/search.php?search=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "\/\/h4\/a",
+        "listXpath" : "\/\/div[@class='media clearfix']",
+        "introXpath" : "\/\/p",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "authorXpath" : "substring-after(\/\/h5, '：')",
+        "coverXpath" : "img\/@src"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.canghaibook.com\/ch\/.+html",
+    "chapterDetailRule" : {
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='content']"
+    },
+    "name" : "沧海文学",
+    "url" : "https:\/\/www.canghaibook.com\/"
+  },
+  {
+    "remark" : "站类E",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "chapterPageURLXpath" : "\/\/a[@class='chapterlist']\/@href",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "dd",
+        "listXpath" : "\/\/div[@id='c-list']\/\/a",
+        "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+        "urlXpath" : "@href"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/a",
+          "updatedAtXpath" : "dl\/div\/em",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a",
+          "coverXpath" : "\/\/img\/@data-original"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[3]",
+          "updatedAtXpath" : "span[4]",
+          "listXpath" : "\/\/div[@class='l']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "nameXpath" : "span[2]\/a",
+          "categoryXpath" : "span[1]"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/nav[@class='nav']\/ul\/li[position()>1 and position()<last()-1]"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "推荐小说",
+          "authorXpath" : "dl\/div\/text()",
+          "coverXpath" : "\/\/img\/@data-original",
+          "listXpath" : "\/\/div[@class='item']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2\/a",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "i",
+          "groupXpath" : "\/\/div[@class='content']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[3]",
+          "updatedAtXpath" : "span[4]",
+          "listXpath" : "\/\/div[@class='l']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "nameXpath" : "span[2]\/a",
+          "categoryXpath" : "span[1]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/ixunshu.net\/zhao\/?keyword=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "dl\/dt\/a",
+        "listXpath" : "\/\/div[@class='item']",
+        "introXpath" : "dl\/dd",
+        "urlXpath" : "dl\/dt\/a\/@href",
+        "authorXpath" : "dl\/div\/a",
+        "coverXpath" : "\/\/img\/@data-original"
+      }
+    },
+    "bookURLRegex" : "https:\/\/ixunshu.net\/xs\/\\d+",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[text()='下一页']\/@href",
+      "contentXpath" : "\/\/div[@id='booktxt']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "try.+|\\(ads.+"
+    },
+    "name" : "爱寻书",
+    "url" : "https:\/\/ixunshu.net\/"
+  },
+  {
+    "remark" : "站类C",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@name='description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/dl[@class='panel-body panel-chapterlist']\/dd[@class='col-md-3']"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:title']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "td[3]",
+          "updatedAtXpath" : "td[4]",
+          "listXpath" : "\/\/table[@class='table']\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "lastChapterXpath" : "td[2]\/a",
+          "nameXpath" : "td[1]\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/ul[@class='nav navbar-nav']\/li[position()<last()-1]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[@class='next' and text()='>']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "nameXpath" : "\/\/strong",
+          "listXpath" : "\/\/div[@class='panel-body']\/div",
+          "groupTitleFixed" : "推荐小说",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "substring-before(\/\/span[1], '\/')",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "td[4]",
+          "updatedAtXpath" : "td[5]",
+          "listXpath" : "\/\/table[@class='table']\/tr",
+          "urlXpath" : "td[2]\/a\/@href",
+          "lastChapterXpath" : "td[3]\/a",
+          "nameXpath" : "td[2]\/a",
+          "categoryXpath" : "td[1]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.lingdxsw.com\/modules\/article\/search.php?searchkey=%s",
+      "keyEncoding" : "GBK",
+      "bookListRule" : {
+        "nameXpath" : "li[1]\/a",
+        "listXpath" : "\/\/div[@class='mySearch']\/ul",
+        "updatedAtXpath" : "substring-after(li[5], '：')",
+        "lastChapterXpath" : "li[2]\/a",
+        "urlXpath" : "li[1]\/a\/@href",
+        "authorXpath" : "substring-after(li[3], '：')"
+      }
+    },
+    "bookURLRegex" : "https:\/\/www.lingdxsw.com\/book\/\\d+.html",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[@id='linkNext' and text()='下一页']\/@href",
+      "contentXpath" : "\/\/div[@id='htmlContent']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "本章未完，.+\\s\\(\\d{1}\/\\d{1}\\)"
+    },
+    "name" : "零点小说网",
+    "url" : "https:\/\/www.lingdxsw.com"
+  }
+]
