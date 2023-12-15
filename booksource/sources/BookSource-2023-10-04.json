@@ -1,0 +1,504 @@
+[
+  {
+    "cookie" : "Hm_lvt_3273a0af852fcb4b6d6ce52f83db21b4=1696145772; bcolor=; font=; size=; fontcolor=; width=; Hm_lpvt_3273a0af852fcb4b6d6ce52f83db21b4=1696316622",
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='listmain']\/\/dd"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "分类推荐",
+          "authorXpath" : "dl\/dt\/span\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']\/div[@class='p10']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]\/text()",
+          "updatedAtXpath" : "span[5]\/text()",
+          "listXpath" : "\/\/div[@class='up']\/div[@class='l bd']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a\/text()",
+          "nameXpath" : "span[2]\/a\/text()",
+          "categoryXpath" : "span[1]\/text()&&R[\\[|\\]]"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='nav']\/ul\/li&&S[1,-3]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "dl\/dt\/span\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']\/div[@class='p10']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleXpath" : "h2\/text()",
+          "groupXpath" : "\/\/div[@class='block']",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='top']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]\/text()",
+          "updatedAtXpath" : "span[5]\/text()",
+          "listXpath" : "\/\/div[@class='up']\/div[@class='l bd']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a\/text()",
+          "nameXpath" : "span[2]\/a\/text()",
+          "categoryXpath" : "span[1]\/text()&&R[\\[|\\]]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.miaobige.cc\/gdsuisfguigsdugiusiuesu.php?ie=gbk&q=%s",
+      "keyEncoding" : "GBK",
+      "bookListRule" : {
+        "lastChapterXpath" : "\/\/div[@class='update']\/a\/text()",
+        "authorXpath" : "\/\/div[@class='author']\/text()&&R[作者：]",
+        "coverXpath" : "\/\/img\/@src",
+        "listXpath" : "\/\/div[@class='bookbox']",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "introXpath" : "\/\/p\/text()",
+        "nameXpath" : "\/\/h4\/a\/text()",
+        "categoryXpath" : "\/\/div[@class='cat']\/text()&&R[分类：]"
+      }
+    },
+    "group" : "2023-10-04",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[contains(text(), '下一页')]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@id='content']"
+    },
+    "name" : "妙笔阁",
+    "url" : "http:\/\/www.miaobige.cc\/"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='listmain']\/\/dd"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "分类推荐",
+          "authorXpath" : "dl\/dt\/span\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']\/div[@class='p10']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]\/text()",
+          "updatedAtXpath" : "span[5]\/text()",
+          "listXpath" : "\/\/div[@class='up']\/div[@class='l bd']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a\/text()",
+          "nameXpath" : "span[2]\/a\/text()",
+          "categoryXpath" : "span[1]\/text()&&R[\\[|\\]]"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='nav']\/ul\/li&&S[1,-1]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "dl\/dt\/span\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='item']\/div[@class='p10']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleXpath" : "h2\/text()",
+          "groupXpath" : "\/\/div[@class='block']",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='top']",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd\/text()",
+          "nameXpath" : "dl\/dt\/a\/text()"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[4]\/text()",
+          "updatedAtXpath" : "span[5]\/text()",
+          "listXpath" : "\/\/div[@class='up']\/div[@class='l bd']\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a\/text()",
+          "nameXpath" : "span[2]\/a\/text()",
+          "categoryXpath" : "span[1]\/text()&&R[\\[|\\]]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.9iwx.com\/dfhgdfihio.php?ie=gbk&q=%s",
+      "keyEncoding" : "GBK",
+      "bookListRule" : {
+        "lastChapterXpath" : "\/\/div[@class='update']\/a\/text()",
+        "authorXpath" : "\/\/div[@class='author']\/text()&&R[作者：]",
+        "coverXpath" : "\/\/img\/@src",
+        "listXpath" : "\/\/div[@class='bookbox']",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "introXpath" : "\/\/p\/text()",
+        "nameXpath" : "\/\/h4\/a\/text()",
+        "categoryXpath" : "\/\/div[@class='cat']\/text()&&R[分类：]"
+      }
+    },
+    "group" : "2023-10-04",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[contains(text(), '下一页')]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@id='content']"
+    },
+    "name" : "就爱文学",
+    "url" : "http:\/\/www.9iwx.com\/"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/div[@class='catalognovel_intro']\/text()",
+      "authorXpath" : "\/\/span[@class='novelauthor']\/a\/text()",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='listchapter']\/ul\/li"
+      },
+      "coverXpath" : "\/\/div[@class='catalog_pic']\/img\/@src",
+      "lastChapterXpath" : "\/\/div[@class='catalognovel_newest']\/a\/text()",
+      "nameXpath" : "\/\/span[@class='novelname']\/text()",
+      "categoryXpath" : "\/\/div[@class='catalognovel_type']\/p[2]\/text()"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "authorXpath" : "\/\/p[@class='novel_author']\/a\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='novel_box']",
+          "urlXpath" : "\/\/p[@class='novel_name']\/a\/@href",
+          "introXpath" : "\/\/p[@class='novel_intro']\/text()",
+          "nameXpath" : "\/\/p[@class='novel_name']\/a\/text()",
+          "lastChapterXpath" : "\/\/p[@class='novel_newest']\/a\/text()"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='nav']\/ul\/li&&S[1,-2]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "\/\/p[@class='novel_author']\/a\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/div[@class='novel_box']",
+          "urlXpath" : "\/\/p[@class='novel_name']\/a\/@href",
+          "introXpath" : "\/\/p[@class='novel_intro']\/text()",
+          "nameXpath" : "\/\/p[@class='novel_name']\/a\/text()",
+          "lastChapterXpath" : "\/\/p[@class='novel_newest']\/a\/text()"
+        },
+        {
+          "groupTitleXpath" : "div[@class='sort_title']\/h3\/a\/text()",
+          "groupXpath" : "\/\/div[@class='sort_info']",
+          "authorXpath" : "\/\/p[@class='novelinfo_author']\/a\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "div[@class='sort_novel']",
+          "urlXpath" : "\/\/p[@class='novelinfo_name']\/a\/@href",
+          "introXpath" : "\/\/p[@class='novelinfo_intro']\/text()",
+          "nameXpath" : "\/\/p[@class='novelinfo_name']\/a\/text()"
+        },
+        {
+          "nameXpath" : "p[@class='sortinfo_name']\/a\/text()",
+          "listXpath" : "ul[@class='sortinfo_list']\/li",
+          "groupTitleXpath" : "div[@class='sort_title']\/h3\/a\/text()",
+          "urlXpath" : "p[@class='sortinfo_name']\/a\/@href",
+          "authorXpath" : "p[@class='sortinfo_author']\/a\/text()",
+          "groupXpath" : "\/\/div[@class='sort_info']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "updatedAtXpath" : "p[4]\/text()",
+          "listXpath" : "\/\/div[@class='articlelist']\/\/li",
+          "urlXpath" : "p[2]\/a\/@href",
+          "lastChapterXpath" : "p[3]\/a\/text()",
+          "nameXpath" : "p[2]\/a\/text()",
+          "categoryXpath" : "p[1]\/text()"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "bookListRule" : {
+        "nameXpath" : "p[1]\/a\/text()",
+        "listXpath" : "\/\/ul[@class='list_ul']\/li",
+        "updatedAtXpath" : "p[5]\/text()",
+        "lastChapterXpath" : "p[2]\/a\/text()",
+        "urlXpath" : "p[1]\/a\/@href",
+        "authorXpath" : "p[3]\/text()"
+      },
+      "method" : "POST",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.haitang18.com\/modules\/article\/search.php",
+      "params" : "searchkey=%s&an=%CB%D1%CB%F7",
+      "keyEncoding" : "GBK"
+    },
+    "group" : "2023-10-04",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[contains(text(), '下一页')]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@class='chapter_content']"
+    },
+    "name" : "海棠书屋",
+    "url" : "https:\/\/www.haitang18.com\/"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@name='description']\/@content",
+      "authorXpath" : "\/\/div[@class='info_ct']\/div[2]\/text()&&R[作者：]",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='list']\/\/li"
+      },
+      "updatedAtXpath" : "\/\/div[@class='info_ct']\/div[3]\/time\/text()",
+      "coverXpath" : "\/\/div[@class='info_lt']\/img\/@src",
+      "lastChapterXpath" : "\/\/div[@class='info_ct']\/div[4]\/a\/text()",
+      "nameXpath" : "\/\/h1[@class='info_title']\/text()",
+      "categoryXpath" : "\/\/div[@class='bread']\/a[2]\/text()"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "nameXpath" : "\/\/div[@class='hot_name']",
+          "listXpath" : "\/\/li[@class='hot_4_item']",
+          "introXpath" : "\/\/p[@class='hot_des']",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "\/\/div[@class='author']",
+          "coverXpath" : "\/\/img\/@src"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "text()",
+        "urlXpath" : "@href",
+        "listXpath" : "\/\/div[@class='container']\/nav\/a"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='下一页']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "\/\/div[@class='author']\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "\/\/ul[@class='hot_4']\/li",
+          "urlXpath" : "a\/@href",
+          "introXpath" : "\/\/p[@class='hot_des']\/text()",
+          "nameXpath" : "\/\/div[@class='hot_name']\/text()"
+        },
+        {
+          "groupTitleXpath" : "h2\/a\/text()",
+          "groupXpath" : "\/\/div[@class='fenlei_item']",
+          "authorXpath" : "\/\/div[@class='author']\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "listXpath" : "ul\/li[@class='hot_4_item']",
+          "urlXpath" : "a\/@href",
+          "introXpath" : "\/\/p[@class='hot_des']\/text()",
+          "nameXpath" : "\/\/div[@class='hot_name']\/text()"
+        },
+        {
+          "nameXpath" : "a\/text()",
+          "listXpath" : "ul\/li[@class='hot_9_item']",
+          "groupTitleXpath" : "h2\/a\/text()",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "span[@class='author']\/text()",
+          "groupXpath" : "\/\/div[@class='fenlei_item']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "div[@class='author']\/text()",
+          "updatedAtXpath" : "time\/text()",
+          "listXpath" : "\/\/div[@class='update']\/\/li",
+          "urlXpath" : "a[1]\/@href",
+          "lastChapterXpath" : "a[2]\/text()",
+          "nameXpath" : "a[1]\/text()",
+          "categoryXpath" : "span\/text()&&R[\\[|\\]]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "method" : "GET",
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.biquge8.xyz\/search?keyword=%s",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "\/\/div[@class='hot_name']",
+        "listXpath" : "\/\/li[@class='hot_4_item']",
+        "introXpath" : "\/\/p[@class='hot_des']",
+        "urlXpath" : "a\/@href",
+        "authorXpath" : "\/\/div[@class='author']",
+        "coverXpath" : "\/\/img\/@src"
+      }
+    },
+    "group" : "2023-10-04",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[contains(text(), '下一页')]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/article[@class='article']"
+    },
+    "name" : "笔趣阁8",
+    "url" : "http:\/\/www.biquge8.xyz\/"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/ul[@id='ul_all_chapters']\/li"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/div[@class='novel_info_main']\/img\/@src",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:lastest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "nameXpath" : "\/\/h2\/text()",
+          "listXpath" : "\/\/ul[@class='flex']\/li",
+          "introXpath" : "\/\/p[@class='indent']\/text()",
+          "urlXpath" : "div[2]\/a\/@href",
+          "authorXpath" : "\/\/div[@class='li_bottom']\/a\/i\/text()",
+          "coverXpath" : "\/\/img\/@data-original"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "text()",
+        "urlXpath" : "@href",
+        "listXpath" : "\/\/nav[@class='container']\/a&&S[1]"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='>>']\/@href"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "\/\/div[@class='li_bottom']\/a\/i\/text()",
+          "coverXpath" : "\/\/img\/@data-original",
+          "listXpath" : "\/\/ul[@class='flex']\/li",
+          "urlXpath" : "div[2]\/a\/@href",
+          "introXpath" : "\/\/p[@class='indent']\/text()",
+          "nameXpath" : "\/\/h2\/text()"
+        },
+        {
+          "groupTitleXpath" : "a\/text()",
+          "groupXpath" : "\/\/div[@class='sortvisit']",
+          "authorXpath" : "p\/i\/text()&&R[\/]",
+          "coverXpath" : "\/\/img\/@data-original",
+          "listXpath" : "ul\/div",
+          "urlXpath" : "a\/@href",
+          "introXpath" : "p\/text()",
+          "nameXpath" : "p\/a\/text()"
+        },
+        {
+          "nameXpath" : "a\/text()",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "a\/text()",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "i\/text()&&R[\/]",
+          "groupXpath" : "\/\/div[@class='sortvisit']"
+        },
+        {
+          "groupTitleFixed" : "最近更新",
+          "authorXpath" : "span[2]\/a\/text()",
+          "updatedAtXpath" : "span[2]\/text()",
+          "listXpath" : "\/\/div[@class='lastupdate']\/\/li",
+          "urlXpath" : "a[1]\/@href",
+          "lastChapterXpath" : "a[2]\/text()",
+          "nameXpath" : "a[1]\/text()",
+          "categoryXpath" : "span[1]\/text()&&R[「|」]"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "bookListRule" : {
+        "authorXpath" : "div[2]\/p[1]\/text()",
+        "coverXpath" : "\/\/img\/@data-original",
+        "listXpath" : "\/\/li[@class='searchresult']",
+        "urlXpath" : "div[2]\/a\/@href",
+        "introXpath" : "div[2]\/p[2]\/text()",
+        "nameXpath" : "\/\/h3",
+        "lastChapterXpath" : "div[2]\/p[3]\/a\/text()"
+      },
+      "method" : "POST",
+      "engine" : "HttpRequest",
+      "url" : "https:\/\/www.diyi69.com\/search\/",
+      "params" : "searchkey=%s&searchtype=all&Submit=",
+      "keyEncoding" : "UTF-8"
+    },
+    "group" : "2023-10-04",
+    "chapterDetailRule" : {
+      "nextPageURLXpath" : "\/\/a[contains(text(), '下一页')]\/@href",
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/article[@id='article']"
+    },
+    "name" : "第一69",
+    "url" : "https:\/\/www.diyi69.com\/"
+  }
+]
