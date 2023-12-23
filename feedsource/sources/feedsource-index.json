@@ -1,0 +1,22 @@
+[
+  {
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "nameXpath" : "td[2]",
+          "listXpath" : "\/\/tr",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd]",
+          "summaryXpath" : "td[3]",
+          "urlXpath" : "td[1]\/a\/@href"
+        }
+      ]
+    },
+    "articleDetailRule" : {
+      "type" : "FeedSource"
+    },
+    "name" : "订阅源仓库",
+    "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
+    "type" : "HTML"
+  }
+]
