@@ -1,0 +1,21 @@
+[
+  {
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "authorXpath" : "author",
+          "summaryXpath" : "summary",
+          "listXpath" : "\/\/item",
+          "urlXpath" : "link",
+          "pubDateXpath" : "pubDate&&D[EEE, dd MMM yyyy HH:mm:ss Z,en]",
+          "nameXpath" : "title",
+          "coverXpath" : "thumbnail"
+        }
+      ]
+    },
+    "name" : "虎嗅网",
+    "url" : "https:\/\/rss.huxiu.com\/",
+    "type" : "XML"
+  }
+]
