@@ -1,0 +1,20 @@
+[
+  {
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "nameXpath" : "title",
+          "listXpath" : "\/\/item",
+          "pubDateXpath" : "pubDate&&D[EEE, dd MMM yyyy HH:mm:ss Z,en]",
+          "summaryXpath" : "description&&X[\/\/body]",
+          "urlXpath" : "link",
+          "authorXpath" : "author"
+        }
+      ]
+    },
+    "name" : "少数派",
+    "url" : "https:\/\/sspai.com\/feed",
+    "type" : "XML"
+  }
+]
