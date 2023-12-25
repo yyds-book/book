@@ -2,7 +2,7 @@
     "url" : "https://raw.githubusercontent.com/CalsRanna/rule_sample/master/sources.json",
     "type" : "JSON",
     "userAgent" : "Computer",
-    "name" : "TOP-level"
+    "name" : "TOP-书源"
   },
   {
     "articleDetailRule" : {
