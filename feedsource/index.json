@@ -1,4 +1,9 @@
-[
+[ {
+    "url" : "https://raw.githubusercontent.com/CalsRanna/rule_sample/master/sources.json",
+    "type" : "JSON",
+    "userAgent" : "Computer",
+    "name" : "TOP-level"
+  },
   {
     "articleDetailRule" : {
       "type" : "BookSource"
