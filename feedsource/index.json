@@ -3,7 +3,7 @@
       "type" : "BookSource"
     },
     "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
-    "URL":"https://raw.gitmirror.com/",
+    "baseUrl":"https://raw.gitmirror.com/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
@@ -22,7 +22,7 @@
   {
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
-    "URL":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/",
     "userAgent" : "Computer",
     "name" : "少数派",
     "discoverRule" : {
@@ -41,7 +41,7 @@
   {
     "type" : "XML",
     "url" : "https:\/\/rss.huxiu.com\/",
-    "URL":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/",
     "userAgent" : "Computer",
     "name" : "虎嗅网",
     "discoverRule" : {
@@ -75,7 +75,7 @@
       ]
     },
     "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
-    "URL":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -84,7 +84,7 @@
       "type" : "BookSource"
     },
     "url" : "https:\/\/wyyd.wwinland.com\/booksource\/index.html",
-    "URL":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
