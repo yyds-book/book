@@ -1,23 +1,4 @@
-[{
-    "articleDetailRule" : {
-      "type" : "BookSource"
-    },
-    "url" : "https://raw.gitmirror.com/x-yyds/book/main/top-level/index.html",
-    "type" : "HTML",
-    "userAgent" : "Computer",
-    "discoverRule" : {
-      "articleListRules" : [
-        {
-          "summaryXpath" : "td[3]",
-          "listXpath" : "\/\/tr",
-          "urlXpath" : "td[1]\/a\/@href",
-          "nameXpath" : "td[2]",
-          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
-        }
-      ]
-    },
-    "name" : "TOP-书源"
-  },
+[
   {
     "articleDetailRule" : {
       "type" : "BookSource"
@@ -94,5 +75,25 @@
     "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
     "type" : "HTML",
     "name" : "订阅源仓库"
+  },
+    {
+    "articleDetailRule" : {
+      "type" : "BookSource"
+    },
+    "url" : "https://raw.gitmirror.com/x-yyds/book/main/top-level/index.html",
+    "type" : "HTML",
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "nameXpath" : "td[2]",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
+        }
+      ]
+    },
+    "name" : "TOP-书源"
   }
 ]
