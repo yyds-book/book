@@ -1,4 +1,24 @@
-[
+[ {
+    "articleDetailRule" : {
+      "type" : "BookSource"
+    },
+    "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
+    "URL":"https://raw.gitmirror.com/",
+    "type" : "HTML",
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "nameXpath" : "td[2]",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
+        }
+      ]
+    },
+    "name" : "TOP-书源"
+  },
   {
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
@@ -80,25 +100,4 @@
     },
     "name" : "书源仓库"
   },
-    {
-    "articleDetailRule" : {
-      "type" : "BookSource"
-    },
-    "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
-    "URL":"https://raw.gitmirror.com/",
-    "type" : "HTML",
-    "userAgent" : "Computer",
-    "discoverRule" : {
-      "articleListRules" : [
-        {
-          "summaryXpath" : "td[3]",
-          "listXpath" : "\/\/tr",
-          "urlXpath" : "td[1]\/a\/@href",
-          "nameXpath" : "td[2]",
-          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
-        }
-      ]
-    },
-    "name" : "TOP-书源"
-  }
 ]
