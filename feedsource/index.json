@@ -84,7 +84,7 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https://raw.gitmirror.com/x-yyds/book/main/top-level/index.html",
+    "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
     "URL":"https://raw.gitmirror.com/",
     "type" : "HTML",
     "userAgent" : "Computer",
