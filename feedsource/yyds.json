@@ -1,1 +1,103 @@
-
+[{
+    "articleDetailRule" : {
+      "type" : "BookSource"
+    },
+    "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
+    "type" : "HTML",
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "nameXpath" : "td[2]",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
+        }
+      ]
+    },
+    "name" : "TOP-书源"
+  },
+  {
+    "type" : "XML",
+    "url" : "https:\/\/sspai.com\/feed",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "userAgent" : "Computer",
+    "name" : "少数派",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "authorXpath" : "author",
+          "urlXpath" : "link",
+          "listXpath" : "\/\/item",
+          "summaryXpath" : "description&&X[\/\/body]",
+          "pubDateXpath" : "pubDate&&D[EEE, dd MMM yyyy HH:mm:ss Z,en]",
+          "nameXpath" : "title"
+        }
+      ]
+    }
+  },
+  {
+    "type" : "XML",
+    "url" : "https:\/\/rss.huxiu.com\/",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "userAgent" : "Computer",
+    "name" : "虎嗅网",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "summary",
+          "urlXpath" : "link",
+          "listXpath" : "\/\/item",
+          "nameXpath" : "title",
+          "authorXpath" : "author",
+          "coverXpath" : "thumbnail",
+          "pubDateXpath" : "pubDate&&D[EEE, dd MMM yyyy HH:mm:ss Z,en]"
+        }
+      ]
+    }
+  },
+  {
+    "articleDetailRule" : {
+      "type" : "FeedSource"
+    },
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "urlXpath" : "td[1]\/a\/@href",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]",
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "nameXpath" : "td[2]"
+        }
+      ]
+    },
+    "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "type" : "HTML",
+    "name" : "订阅源仓库"
+  },
+   {
+    "articleDetailRule" : {
+      "type" : "BookSource"
+    },
+    "url" : "https:\/\/wyyd.wwinland.com\/booksource\/index.html",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "type" : "HTML",
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "nameXpath" : "td[2]",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
+        }
+      ]
+    },
+    "name" : "书源仓库"
+  }
+]
