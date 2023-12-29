@@ -74,7 +74,7 @@
         }
       ]
     },
-    "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
+    "url" : "https://raw.gitmirror.com/yyds-book/book/main/feedsource/index.html",
     "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
     "type" : "HTML",
     "name" : "订阅源仓库"
@@ -83,7 +83,7 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https:\/\/wyyd.wwinland.com\/booksource\/index.html",
+    "url" : "https://raw.gitmirror.com/yyds-book/book/main/booksource/index.html",
     "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
     "type" : "HTML",
     "userAgent" : "Computer",
