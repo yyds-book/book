@@ -3,7 +3,7 @@
       "type" : "BookSource"
     },
     "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
