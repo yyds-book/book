@@ -3,7 +3,7 @@
       "type" : "BookSource"
     },
     "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
@@ -75,7 +75,7 @@
       ]
     },
     "url" : "https://raw.gitmirror.com/yyds-book/book/main/feedsource/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/feedsource/",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -84,7 +84,7 @@
       "type" : "BookSource"
     },
     "url" : "https://raw.gitmirror.com/yyds-book/book/main/booksource/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
