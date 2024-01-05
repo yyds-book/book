@@ -54,7 +54,7 @@
       ]
     },
     "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
-    "baseUrl":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/feedsource/",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -63,7 +63,7 @@
       "type" : "BookSource"
     },
     "url" : "https:\/\/wyyd.wwinland.com\/booksource\/index.html",
-    "baseUrl":"https://wyyd.wwinland.com/",
+    "baseUrl":"https://wyyd.wwinland.com/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
