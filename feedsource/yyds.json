@@ -2,8 +2,8 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https://raw.gitmirror.com/yyds-book/book/main/top-level/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
+    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/top-level/index.html",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
@@ -22,7 +22,7 @@
   {
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/",
     "userAgent" : "Computer",
     "name" : "少数派",
     "discoverRule" : {
@@ -41,7 +41,7 @@
   {
     "type" : "XML",
     "url" : "https:\/\/rss.huxiu.com\/",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/",
     "userAgent" : "Computer",
     "name" : "虎嗅网",
     "discoverRule" : {
@@ -74,8 +74,8 @@
         }
       ]
     },
-    "url" : "https://raw.gitmirror.com/yyds-book/book/main/feedsource/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/feedsource/",
+    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/feedsource/index.html",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/feedsource/",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -83,8 +83,8 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https://raw.gitmirror.com/yyds-book/book/main/booksource/index.html",
-    "baseUrl":"https://raw.gitmirror.com/yyds-book/book/main/booksource/",
+    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/booksource/index.html",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
