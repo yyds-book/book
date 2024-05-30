@@ -1,0 +1,380 @@
+[
+  {
+    "userAgent" : "Computer",
+    "searchRule" : {
+      "keyEncoding" : "UTF-8",
+      "method" : "GET",
+      "bookListRule" : {
+        "nameXpath" : "\/\/h4\/a\/text()",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "coverXpath" : "\/\/a[@class='thumbnail']\/@style&&R[background-image:url\\(]&&R[\\)]",
+        "introXpath" : "\/\/p\/text()",
+        "listXpath" : "\/\/div[@class='col-xs-4 book-coverlist']",
+        "authorXpath" : "\/\/small\/text()"
+      },
+      "engine" : "HttpRequest",
+      "url" : "http:\/\/www.kfqwx.com\/search.php?searchkey=%s"
+    },
+    "discoverRule" : {
+      "navListRule" : {
+        "listFixed" : "玄幻魔法::\/list\/1.html&&武侠修真::\/list\/2.html&&都市言情::\/list\/3.html&&历史军事::\/list\/4.html&&网游动漫::\/list\/5.html&&科幻小说::\/list\/6.html&&恐怖灵异::\/list\/7.html&&其他小说::\/list\/8.html"
+      },
+      "navBookListRules" : [
+        {
+          "listXpath" : "\/\/div[@class='col-xs-4 book-coverlist']",
+          "authorXpath" : "\/\/small\/text()",
+          "groupTitleFixed" : "分类推荐",
+          "urlXpath" : "\/\/h4\/a\/@href",
+          "introXpath" : "\/\/p\/text()",
+          "nameXpath" : "\/\/h4\/a\/text()",
+          "coverXpath" : "\/\/a[@class='cover_dba thumbnail']\/@style&&R[background-image:url\\(]&&R[\\)]"
+        },
+        {
+          "nameXpath" : "td[2]\/a\/text()",
+          "listXpath" : "\/\/table\/\/tr&&S[1]",
+          "groupTitleFixed" : "最近更新",
+          "lastChapterXpath" : "td[3]\/a\/text()",
+          "categoryXpath" : "td[1]\/text()",
+          "updatedAtXpath" : "td[6]\/text()",
+          "authorXpath" : "td[4]\/text()",
+          "urlXpath" : "td[2]\/a\/@href"
+        }
+      ]
+    },
+    "name" : "一乐阅读网",
+    "chapterDetailRule" : {
+      "engine" : "HttpRequest",
+      "nextPageURLXpath" : "\/\/a[text()='下一页 ']\/@href",
+      "contentXpath" : "\/\/div[@id='chaptercontent']",
+      "purificationRegex" : "本章未完.+"
+    },
+    "url" : "http:\/\/www.kfqwx.com\/",
+    "bookDetailRule" : {
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "chapterListRule" : {
+        "listXpath" : "\/\/dl[@class='panel-body panel-chapterlist']\/dd",
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href"
+      },
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "chapterPageURLXpath" : "\/\/a[@class='btn btn-primary hidden-xs']\/@href",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content"
+    },
+    "group" : "2023-12-31"
+  },
+  {
+    "searchRule" : {
+      "engine" : "HttpRequest",
+      "method" : "GET",
+      "bookListRule" : {
+        "updatedAtXpath" : "td[5]\/text()",
+        "listXpath" : "\/\/table\/\/tr&&S[1]",
+        "nameXpath" : "td[1]\/a\/text()",
+        "lastChapterXpath" : "td[2]\/a\/text()",
+        "urlXpath" : "td[1]\/a\/@href",
+        "authorXpath" : "td[3]\/text()"
+      },
+      "keyEncoding" : "UTF-8",
+      "url" : "http:\/\/www.bequgew.info\/modules\/article\/search.php?searchkey=%s"
+    },
+    "name" : "博爱书屋",
+    "url" : "http:\/\/www.bequgew.info\/",
+    "group" : "2023-12-31",
+    "discoverRule" : {
+      "navListRule" : {
+        "listFixed" : "玄幻小说::\/xuanhuanxiaoshuo\/&&修真小说::\/xiuzhenxiaoshuo\/&&都市小说::\/dushixiaoshuo\/&&历史小说::\/lishixiaoshuo\/&&网游小说::\/wangyouxiaoshuo\/&&科幻小说::\/kehuanxiaoshuo\/&&其他小说::\/qitaxiaoshuo\/"
+      },
+      "additionalRule" : {
+        "navNextPageURLXpath" : "\/\/a[text()='>']\/@href"
+      },
+      "navBookListRules" : [
+        {
+          "listXpath" : "\/\/ul[@id='BookList']\/li",
+          "coverXpath" : "\/\/img\/@src",
+          "categoryXpath" : "\/\/div[@class='name']\/span[1]\/text()&&R[类别：]",
+          "urlXpath" : "\/\/strong\/a\/@href",
+          "nameXpath" : "\/\/strong\/a\/text()",
+          "updatedAtXpath" : "\/\/em\/text()",
+          "authorXpath" : "\/\/div[@class='name']\/span[2]\/text()&&R[作者：]",
+          "introXpath" : "\/\/p\/text()",
+          "lastChapterXpath" : "\/\/dl\/\/a\/text()"
+        }
+      ]
+    },
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/div[@id='book_text']",
+      "engine" : "HttpRequest"
+    },
+    "userAgent" : "Computer",
+    "bookDetailRule" : {
+      "chapterListRule" : {
+        "listXpath" : "\/\/div[@class='article_texttitleb']\/\/li",
+        "urlXpath" : "a\/@href",
+        "nameXpath" : "a\/text()"
+      },
+      "categoryXpath" : "\/\/div[@class='info']\/p[1]\/text()&&R[所属类型：]",
+      "updatedAtXpath" : "\/\/div[@class='info']\/p[2]\/text()&&R[更新时间：]",
+      "nameXpath" : "\/\/div[@id='maininfo']\/\/h1\/text()",
+      "authorXpath" : "\/\/div[@id='maininfo']\/\/h3\/a\/text()",
+      "lastChapterXpath" : "\/\/div[@class='info']\/span\/a\/text()",
+      "coverXpath" : "\/\/div[@class='img']\/img\/@src",
+      "introXpath" : "\/\/div[@id='intro']"
+    }
+  },
+  {
+    "group" : "2023-12-31",
+    "url" : "https:\/\/www.bqgie.com\/",
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/div[@id='chaptercontent']",
+      "purificationRegex" : "请收藏本站.+|『点此报错』.+",
+      "engine" : "HttpRequest"
+    },
+    "searchRule" : {
+      "url" : "https:\/\/www.bqgie.com\/s?q=%s",
+      "engine" : "WebView",
+      "method" : "GET",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "introXpath" : "\/\/div[@class='uptime']\/text()",
+        "listXpath" : "\/\/div[@class='box']",
+        "authorXpath" : "\/\/div[@class='author']\/text()&&R[作者：]",
+        "coverXpath" : "\/\/img\/@src",
+        "nameXpath" : "\/\/h4\/a\/text()"
+      }
+    },
+    "discoverRule" : {
+      "navListRule" : {
+        "listXpath" : "\/\/div[@class='nav']\/\/li&&S[1,-1]",
+        "nameXpath" : "a\/text()",
+        "urlXpath" : "a\/@href"
+      },
+      "navBookListRules" : [
+        {
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "authorXpath" : "\/\/dl\/dt\/span\/text()",
+          "listXpath" : "\/\/div[@class='item']",
+          "coverXpath" : "\/\/img\/@src "
+        }
+      ],
+      "bookListRules" : [
+        {
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "groupTitleFixed" : "首页推荐",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "authorXpath" : "\/\/dl\/dt\/span\/text()",
+          "listXpath" : "\/\/div[@class='item']",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "coverXpath" : "\/\/img\/@src"
+        },
+        {
+          "coverXpath" : "\/\/img\/@src",
+          "groupXpath" : "\/\/div[@class='block']",
+          "groupTitleXpath" : "h2\/text()",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "listXpath" : "div[@class='block_top']",
+          "introXpath" : "\/\/dl\/dd\/text()"
+        },
+        {
+          "authorXpath" : "span[3]\/text()",
+          "groupXpath" : "\/\/div[@class='block']",
+          "listXpath" : "ul\/li",
+          "nameXpath" : "span[2]\/a\/text()",
+          "urlXpath" : "span[2]\/a\/@href",
+          "groupTitleXpath" : "h2\/text()"
+        }
+      ]
+    },
+    "bookDetailRule" : {
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content",
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "chapterListRule" : {
+        "urlXpath" : "a\/@href",
+        "nameXpath" : "a\/text()",
+        "listXpath" : "\/\/div[@class='listmain']\/\/dd"
+      }
+    },
+    "name" : "笔趣阁ie",
+    "userAgent" : "Computer"
+  },
+  {
+    "bookDetailRule" : {
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "chapterListRule" : {
+        "listXpath" : "\/\/div[@class='listmain']\/\/dd",
+        "urlXpath" : "a\/@href",
+        "nameXpath" : "a\/text()"
+      },
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "introXpath" : "\/\/meta[@property='og:description']\/@content"
+    },
+    "group" : "2023-12-31",
+    "url" : "https:\/\/www.bqgka.com\/",
+    "name" : "笔趣阁ka",
+    "searchRule" : {
+      "url" : "https:\/\/www.bqgka.com\/s?q=%s",
+      "keyEncoding" : "UTF-8",
+      "engine" : "WebView",
+      "bookListRule" : {
+        "listXpath" : "\/\/div[@class='box']",
+        "authorXpath" : "\/\/div[@class='author']\/text()&&R[作者：]",
+        "coverXpath" : "\/\/img\/@src",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "introXpath" : "\/\/div[@class='uptime']\/text()",
+        "nameXpath" : "\/\/h4\/a\/text()"
+      },
+      "method" : "GET"
+    },
+    "discoverRule" : {
+      "navListRule" : {
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class='nav']\/\/li&&S[1,-1]",
+        "nameXpath" : "a\/text()"
+      },
+      "bookListRules" : [
+        {
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "authorXpath" : "\/\/dl\/dt\/span\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "groupTitleFixed" : "首页推荐",
+          "listXpath" : "\/\/div[@class='item']"
+        },
+        {
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "coverXpath" : "\/\/img\/@src",
+          "groupXpath" : "\/\/div[@class='block']",
+          "listXpath" : "div[@class='block_top']",
+          "groupTitleXpath" : "h2\/text()",
+          "introXpath" : "\/\/dl\/dd\/text()"
+        },
+        {
+          "nameXpath" : "span[2]\/a\/text()",
+          "urlXpath" : "span[2]\/a\/@href",
+          "listXpath" : "ul\/li",
+          "authorXpath" : "span[3]\/text()",
+          "groupXpath" : "\/\/div[@class='block']",
+          "groupTitleXpath" : "h2\/text()"
+        }
+      ],
+      "navBookListRules" : [
+        {
+          "coverXpath" : "\/\/img\/@src ",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "listXpath" : "\/\/div[@class='item']",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "authorXpath" : "\/\/dl\/dt\/span\/text()"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "chapterDetailRule" : {
+      "engine" : "HttpRequest",
+      "contentXpath" : "\/\/div[@id='chaptercontent']",
+      "purificationRegex" : "请收藏本站.+|『点此报错』.+"
+    }
+  },
+  {
+    "url" : "https:\/\/www.bqgll.com\/",
+    "group" : "2023-12-31",
+    "name" : "笔趣阁ll",
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/div[@id='chaptercontent']",
+      "engine" : "HttpRequest",
+      "purificationRegex" : "请收藏本站.+|『点此报错』.+"
+    },
+    "discoverRule" : {
+      "bookListRules" : [
+        {
+          "coverXpath" : "\/\/img\/@src",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "listXpath" : "\/\/div[@class='item']",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "authorXpath" : "\/\/dl\/dt\/span\/text()",
+          "groupTitleFixed" : "首页推荐"
+        },
+        {
+          "groupXpath" : "\/\/div[@class='block']",
+          "listXpath" : "div[@class='block_top']",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "coverXpath" : "\/\/img\/@src",
+          "groupTitleXpath" : "h2\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href"
+        },
+        {
+          "listXpath" : "ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "groupXpath" : "\/\/div[@class='block']",
+          "authorXpath" : "span[3]\/text()",
+          "nameXpath" : "span[2]\/a\/text()",
+          "groupTitleXpath" : "h2\/text()"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a\/text()",
+        "listXpath" : "\/\/div[@class='nav']\/\/li&&S[1,-1]",
+        "urlXpath" : "a\/@href"
+      },
+      "navBookListRules" : [
+        {
+          "authorXpath" : "\/\/dl\/dt\/span\/text()",
+          "introXpath" : "\/\/dl\/dd\/text()",
+          "coverXpath" : "\/\/img\/@src ",
+          "nameXpath" : "\/\/dl\/dt\/a\/text()",
+          "urlXpath" : "\/\/dl\/dt\/a\/@href",
+          "listXpath" : "\/\/div[@class='item']"
+        }
+      ]
+    },
+    "bookDetailRule" : {
+      "updatedAtXpath" : "\/\/meta[@property='og:novel:update_time']\/@content",
+      "introXpath" : "\/\/meta[@property='og:description']\/@content",
+      "categoryXpath" : "\/\/meta[@property='og:novel:category']\/@content",
+      "lastChapterXpath" : "\/\/meta[@property='og:novel:latest_chapter_name']\/@content",
+      "chapterListRule" : {
+        "nameXpath" : "a\/text()",
+        "listXpath" : "\/\/div[@class='listmain']\/\/dd",
+        "urlXpath" : "a\/@href"
+      },
+      "coverXpath" : "\/\/meta[@property='og:image']\/@content",
+      "nameXpath" : "\/\/meta[@property='og:novel:book_name']\/@content",
+      "authorXpath" : "\/\/meta[@property='og:novel:author']\/@content"
+    },
+    "searchRule" : {
+      "url" : "https:\/\/www.bqgll.com\/s?q=%s",
+      "method" : "GET",
+      "keyEncoding" : "UTF-8",
+      "bookListRule" : {
+        "nameXpath" : "\/\/h4\/a\/text()",
+        "urlXpath" : "\/\/h4\/a\/@href",
+        "authorXpath" : "\/\/div[@class='author']\/text()&&R[作者：]",
+        "coverXpath" : "\/\/img\/@src",
+        "listXpath" : "\/\/div[@class='box']",
+        "introXpath" : "\/\/div[@class='uptime']\/text()"
+      },
+      "engine" : "WebView"
+    },
+    "userAgent" : "Computer"
+  }
+]
