@@ -19,9 +19,9 @@
 
 > 保存永久下载地址不迷路
 
-[点击进入官方下载](https://pan.lanzv.com/cbh)
+[点击进入官方下载]()
 
-[点击进入官方备用下载](https://cnto3la5g6hfi0gtjjj0.baseapi.memfiredb.com/storage/v1/object/sign/yyds/movie/app-release.apk?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5eWRzL21vdmllL2FwcC1yZWxlYXNlLmFwayIsImlhdCI6MTcxMjMyNDI5OSwiZXhwIjoxNzQzODYwMjk5fQ.hEOSBYeqsxAEJTSksISitzOofB61lSTd7ihPaRSxfL0&t=2024-04-05T13%3A38%3A20.204Z)
+[点击进入官方备用下载]()
 
 
 ##  TestFlight
@@ -36,7 +36,6 @@
 
 [点击导入json源](https://cnto3la5g6hfi0gtjjj0.baseapi.memfiredb.com/storage/v1/object/sign/yyds/movie/json.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5eWRzL21vdmllL2pzb24uanNvbiIsImlhdCI6MTcxMjMyNDE5OCwiZXhwIjoxNzQzODYwMTk4fQ.Y1VOum60lf5qRVuAwJbzDWz7NA0RVQOLxv38k7JJZrc&t=2024-04-05T13%3A36%3A39.475Z)
 
-[点击导入web源](https://cnto3la5g6hfi0gtjjj0.baseapi.memfiredb.com/storage/v1/object/sign/yyds/movie/web.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5eWRzL21vdmllL3dlYi5qc29uIiwiaWF0IjoxNzEyMzI0MjMzLCJleHAiOjE3NDM4NjAyMzN9.NozTInq5U7dsRbygWqORuXp74tVQrUxTkIYHay1pLcE&t=2024-04-05T13%3A37%3A13.914Z)
 
 在 **源管理——右上角——导入源** 中导入即可（请提前科学上网），相关教程编写中
 
