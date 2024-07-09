@@ -19,9 +19,9 @@
 
 > 保存永久下载地址不迷路
 
-[点击进入官方下载]()
+[点击进入R下载](https://lz.qaiu.top/parser?url=https://pan.lanzoub.com/flutter-reader)
 
-[点击进入官方备用下载]()
+[点击进入FR下载](https://pan.lanzoub.com/flutter-reader)
 
 
 ##  TestFlight
@@ -34,8 +34,9 @@
 
 提供了一个示例网络源：
 
-[点击导入json源](https://cnto3la5g6hfi0gtjjj0.baseapi.memfiredb.com/storage/v1/object/sign/yyds/movie/json.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5eWRzL21vdmllL2pzb24uanNvbiIsImlhdCI6MTcxMjMyNDE5OCwiZXhwIjoxNzQzODYwMTk4fQ.Y1VOum60lf5qRVuAwJbzDWz7NA0RVQOLxv38k7JJZrc&t=2024-04-05T13%3A36%3A39.475Z)
+[点击导入index.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/eq8sg319DgyO4KmEJ93R5LnahcXWNeDs/index.json)
 
+[点击导入yyds.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/wtg1wkTV6nRoXGIC3owtr7dg6HyE5RFe/yyds.json)
 
 在 **源管理——右上角——导入源** 中导入即可（请提前科学上网），相关教程编写中
 
