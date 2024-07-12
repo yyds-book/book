@@ -34,9 +34,9 @@
 
 提供了一个示例网络源：
 
-[点击导入index.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/eq8sg319DgyO4KmEJ93R5LnahcXWNeDs/index.json)
+[点击导入index.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/qsac5mkguvFpSsz3Fw0lfcgTVB6NBQVq/index.json)
 
-[点击导入yyds.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/wtg1wkTV6nRoXGIC3owtr7dg6HyE5RFe/yyds.json)
+[点击导入yyds.json源](http://lc-4EWOnjqh.cn-n1.lcfile.com/lEOHGPvbxqAomMyiXMS2fzDhKaX0tRim/yyds.json)
 
 在 **源管理——右上角——导入源** 中导入即可（请提前科学上网），相关教程编写中
 
