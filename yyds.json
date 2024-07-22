@@ -1,24 +1,4 @@
-[{
-    "articleDetailRule" : {
-      "type" : "BookSource"
-    },
-    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/top-level/index.html",
-    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/top-level/",
-    "type" : "HTML",
-    "userAgent" : "Computer",
-    "discoverRule" : {
-      "articleListRules" : [
-        {
-          "summaryXpath" : "td[3]",
-          "listXpath" : "\/\/tr",
-          "urlXpath" : "td[1]\/a\/@href",
-          "nameXpath" : "td[2]",
-          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
-        }
-      ]
-    },
-    "name" : "TOP-书源"
-  },
+[
   {
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
