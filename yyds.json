@@ -52,7 +52,7 @@
         }
       ]
     },
-    "url" : "/yyds-book/book/main/feedsource/index.html",
+    "url" : "/feedsource/index.html",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -60,7 +60,7 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "/yyds-book/book/main/booksource/index.html",
+    "url" : "/booksource/index.html",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
