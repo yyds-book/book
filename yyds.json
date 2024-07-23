@@ -52,7 +52,8 @@
         }
       ]
     },
-    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/feedsource/index.html",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main",
+    "url" : "/feedsource/index.html",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -60,7 +61,8 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/booksource/index.html",
+    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main",
+    "url" : "/booksource/index.html",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
