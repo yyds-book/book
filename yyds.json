@@ -2,7 +2,6 @@
   {
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
-    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/",
     "userAgent" : "Computer",
     "name" : "少数派",
     "discoverRule" : {
@@ -21,7 +20,6 @@
   {
     "type" : "XML",
     "url" : "https:\/\/rss.huxiu.com\/",
-    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/",
     "userAgent" : "Computer",
     "name" : "虎嗅网",
     "discoverRule" : {
@@ -54,8 +52,7 @@
         }
       ]
     },
-    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/feedsource/index.html",
-    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/feedsource/",
+    "url" : "/yyds-book/book/main/feedsource/index.html",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -63,8 +60,7 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/booksource/index.html",
-    "baseUrl":"https://raw.githubusercontent.com/yyds-book/book/main/booksource/",
+    "url" : "/yyds-book/book/main/booksource/index.html",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
