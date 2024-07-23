@@ -52,7 +52,7 @@
         }
       ]
     },
-    "url" : "/feedsource/index.html",
+    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/feedsource/index.html",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
