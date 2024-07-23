@@ -60,7 +60,7 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url" : "/booksource/index.html",
+    "url" : "https://raw.githubusercontent.com/yyds-book/book/main/booksource/index.html",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
