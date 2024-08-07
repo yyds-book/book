@@ -28,7 +28,7 @@
 
 > 仅有**10000**个名额，先到先得
 
-[点击进入 TestFlight 内测](https://testflight.apple.com/join/hDMYDZ0P)
+[点击进入 TestFlight 内测](https://testflight.apple.com/join/NCjMVRrX)
 
 ## 👩‍💻 源导入
 在 **源管理——右上角——导入源** 中导入即可（请提前科学上网），相关教程编写中
