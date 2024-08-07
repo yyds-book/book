@@ -3,7 +3,7 @@
     "url": "https://testflight.apple.com/join/q9yUcV8n",
     "name": "X电影 Testflight",
     "description": "免费 VIP 追剧",
-    "iconUrl": "https://raw.githubusercontent.com/yyds-book/book/main/image/icon.jpg",
+    "iconUrl": "https://raw.githubusercontent.com/yyds-m/movie/main/images/launcher_icon.png",
     "packageName": "",
     "bundleId": "",
     "urlScheme": ""
@@ -12,7 +12,7 @@
     "url": "https://pan.lanzoub.com/flutter-v",
     "name": "安卓",
     "description": "极致纯粹的观影工具",
-    "iconUrl": "https://raw.githubusercontent.com/yyds-book/book/main/image/icon.jpg",
+    "iconUrl": "https://raw.githubusercontent.com/yyds-m/movie/main/images/launcher_icon.png",
     "packageName": "",
     "bundleId": "",
     "urlScheme": ""
