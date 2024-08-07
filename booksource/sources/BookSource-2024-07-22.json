@@ -44,7 +44,7 @@
     "name": "69书吧",
     "url": "https://www.69shu.pro",
     "enabled": true,
-    "explore_enabled": true,
+    "explore_enabled": false,
     "type": "book",
     "comment": "科学上网",
     "header": "{\n  \"Content-Type\": \"application/x-www-form-urlencoded\"\n}",
