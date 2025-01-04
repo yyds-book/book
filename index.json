@@ -1,7 +1,7 @@
 [{
     "type" : "XML",
     "url" : "https:\/\/sspai.com\/feed",
-    "baseUrl":"https://wyyd.wwinland.com/",
+    "path":"https://wyyd.wwinland.com/",
     "userAgent" : "Computer",
     "name" : "少数派",
     "discoverRule" : {
@@ -20,7 +20,7 @@
   {
     "type" : "XML",
     "url" : "https:\/\/rss.huxiu.com\/",
-    "baseUrl":"https://wyyd.wwinland.com/",
+    "path":"https://wyyd.wwinland.com/",
     "userAgent" : "Computer",
     "name" : "虎嗅网",
     "discoverRule" : {
@@ -54,7 +54,7 @@
       ]
     },
     "url" : "https:\/\/wyyd.wwinland.com\/feedsource\/index.html",
-    "baseUrl":"https://wyyd.wwinland.com/feedsource/",
+    "path":"https://wyyd.wwinland.com/feedsource/",
     "type" : "HTML",
     "name" : "订阅源仓库"
   },
@@ -63,7 +63,7 @@
       "type" : "BookSource"
     },
     "url" : "https:\/\/wyyd.wwinland.com\/booksource\/index.html",
-    "baseUrl":"https://wyyd.wwinland.com/booksource/",
+    "path":"https://wyyd.wwinland.com/booksource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
