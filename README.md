@@ -22,8 +22,17 @@
 
 [点击进入 TestFlight 内测](https://testflight.apple.com/join/NCjMVRrX)
 
-## 👩‍💻 源导入
-在 **源管理——右上角——导入源** 中导入即可（请提前科学上网），相关教程编写中
+## 📽️订阅：
+> 仅支持json文件地址或github原始json文件地址
+
+  [点击导入无广告源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/index.json)
+
+  [点击导入第三方源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/yyds.json)
+
+
+👩‍💻 自定义源，json数据格式示例：
+
+> [{"name": "","url": ""},{"name": "","url": ""}]
 
 
 ## 💡温馨提示
