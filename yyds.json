@@ -77,5 +77,26 @@
       ]
     },
     "name" : "书源仓库"
+  },
+   {
+    "articleDetailRule" : {
+      "type" : "BookSource"
+    },
+    "url":"https://raw.githubusercontent.com/yyds-book/book/main/yxsource/index.html",
+    "path" : "https://raw.githubusercontent.com/yyds-book/book/main/yxsource/",
+    "type" : "HTML",
+    "userAgent" : "Computer",
+    "discoverRule" : {
+      "articleListRules" : [
+        {
+          "summaryXpath" : "td[3]",
+          "listXpath" : "\/\/tr",
+          "urlXpath" : "td[1]\/a\/@href",
+          "nameXpath" : "td[2]",
+          "pubDateXpath" : "td[4]&&D[yyyy-MM-dd HH:mm]"
+        }
+      ]
+    },
+    "name" : "严选仓库"
   }
 ]
