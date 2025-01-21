@@ -38,9 +38,7 @@
       "name": "h4 > a@text",
       "wordCount": ".am-badge-primary@text"
     },
-    "ruleReview": [
-      
-    ],
+    "ruleReview": {},
     "ruleSearch": {
       "author": ".book-list-1-author@text## / 文",
       "bookList": ".am-g > div",
@@ -125,9 +123,7 @@
     "ruleContent": {
       "content": "#htmlContent@html"
     },
-    "ruleExplore": [
-      
-    ],
+    "ruleExplore":{},
     "ruleSearch": {
       "author": ".booktag@text",
       "bookList": ".col-md-10",
