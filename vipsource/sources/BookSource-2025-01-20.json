@@ -1,16 +1,15 @@
 [
     {
-        "bookSourceName": "369小说网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.369book.cc/",
-        "bookUrlPattern": "",
-        "customOrder": 0,
+        "type": 0,
+        "charset" "",
+        "method" "get",
         "enabled": true,
-        "enabledCookieJar": false,
-        "enabledExplore": true,
-        "exploreScreen": "",
-        "exploreUrl": "[\n    \n    {\"title\": \"热读榜\",\"url\":\"/rank/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n       {\"title\": \"❀  书库  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"❀  完结小说  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/quanben/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/quanben/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/quanben/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/quanben/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/quanben/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/quanben/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/quanben/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/quanben/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/quanben/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/quanben/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }}\n]",
+        "name": "369小说网",
+        "url": "https://www.369book.cc/",
+        "searchUrl": "/search/?searchkey={{key}}",
+        "params" "",
         "header": "{\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\",\n    \"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
+        "exploreUrl": "[\n    \n    {\"title\": \"热读榜\",\"url\":\"/rank/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n       {\"title\": \"❀  书库  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"❀  完结小说  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/quanben/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/quanben/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/quanben/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/quanben/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/quanben/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/quanben/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/quanben/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/quanben/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/quanben/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/quanben/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }}\n]",
         "lastUpdateTime": "1727576680671",
         "respondTime": 180000,
         "ruleBookInfo": {
@@ -59,23 +58,19 @@
             "formatJs": "",
             "nextTocUrl": ".index-container:nth-child(4) > .index-container-btn:nth-child(3)@href",
             "updateTime": ""
-        },
-        "searchUrl": "/search/?searchkey={{key}}",
-        "weight": 0
+        }
     },
-    {
-        "bookSourceComment": "",
-        "bookSourceGroup": "🔰普通",
-        "bookSourceName": "🔰 全本小说",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.quanben.so/",
-        "bookUrlPattern": "https://www.quanben.so/\\d+_\\d+/",
-        "customOrder": -1,
+    {   
+        "type": 0,
+        "charset" "",
+        "method" "get",
         "enabled": true,
-        "enabledCookieJar": false,
-        "enabledExplore": true,
+        "name": "🔰 全本小说",
+        "url": "https://www.quanben.so/",
+        "searchUrl": "modules/article/search.php?searchkey={{key}}",        
+        "bookUrlPattern": "https://www.quanben.so/\\d+_\\d+/",
+        "params" "",
         "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36\"}",
-        "lastUpdateTime": "1727159421112",
         "respondTime": 180000,
         "ruleBookInfo": {
             "author": "id.info@tag.p.0@tag.a.0@text",
@@ -103,20 +98,16 @@
             "chapterName": "text",
             "chapterUrl": "href",
             "nextTocUrl": "option@value"
-        },
-        "searchUrl": "modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
-        "weight": 0
+        }
     },
     {
-        "bookSourceComment": "by@咔咔龙",
-        "bookSourceName": "玩文学小说网",
-        "bookSourceType": 0,
-        "bookSourceUrl": "https://www.wanwx.com/",
-        "customOrder": 0,
+        "type": 0,
+        "charset" "",
+        "method" "post",
         "enabled": true,
-        "enabledCookieJar": false,
-        "enabledExplore": true,
-        "lastUpdateTime": "1728222052479",
+        "name": "玩文学小说网",
+        "url": "https://www.wanwx.com/",
+        "searchUrl": "search,{\n  \"body\": \"keyword={{key}}&page={{page}}\",\n  \"method\": \"POST\"\n}",
         "respondTime": 180000,
         "ruleBookInfo": {
             "author": ".booktag@a.0@text",
@@ -145,8 +136,6 @@
             "chapterList": "#list-chapterAll@a",
             "chapterName": "text",
             "chapterUrl": "href"
-        },
-        "searchUrl": "search,{\n  \"body\": \"keyword={{key}}&page={{page}}\",\n  \"method\": \"POST\"\n}",
-        "weight": 0
+        }
     }
 ]
