@@ -84,9 +84,7 @@
       "content": "id.content@html",
       "replaceRegex": "##全本小说网.*"
     },
-    "ruleExplore": [
-      
-    ],
+    "ruleExplore":{},
     "ruleSearch": {
       "author": "class.s4@text",
       "bookList": "class.novelslistss@tag.li",
