@@ -1,64 +1,73 @@
 [
   {
-    "type": 0,
-    "charset": "",
-    "method": "get",
-    "enabled": true,
-    "name": "369小说网",
-    "url": "https://www.369book.cc/",
-    "searchUrl": "/search/?searchkey={{key}}",
-    "params": "",
-    "header": "{\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\",\n    \"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
-    "exploreUrl": "[\n    \n    {\"title\": \"热读榜\",\"url\":\"/rank/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n       {\"title\": \"❀  书库  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"❀  完结小说  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/quanben/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/quanben/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/quanben/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/quanben/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/quanben/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/quanben/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/quanben/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/quanben/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/quanben/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/quanben/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }}\n]",
-    "lastUpdateTime": "1727576680671",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": "",
-      "coverUrl": "",
-      "intro": "#bookintro@text",
-      "kind": ".am-badge-danger@text&&.am-text-sm > .am-badge-warning@text",
-      "lastChapter": ".book-info-last > a@text",
-      "name": "",
-      "tocUrl": ".am-show-sm-only > .am-list-news-bd .am-list-news-more@href",
-      "wordCount": ".am-text-sm > .am-badge-secondary@text"
-    },
-    "ruleContent": {
-      "content": "#chaptercontent@html\n<js>\nresult=result.replace(/(<p>《.+\\(www.369book.cc\\)<\\/p>)/, '');\nresult=result.replace(/(<div class=\"book-read-link.+\\n.+\\n.+\\n.<\\/div>)/, '');\nresult=result.replace(/(<p>本章未完.+继续阅读<\\/p>)/,'');\njava.log(result)\n</js>",
-      "nextContentUrl": "class.am-btn-default.4@href",
-      "replaceRegex": ""
-    },
-    "ruleExplore": {
-      "author": ".book-list-1-author@text## / 文",
-      "bookList": ".am-g > div",
-      "bookUrl": "h4 > a@href",
-      "coverUrl": ".am-thumbnail@data-src",
-      "intro": ".book-list-1-intro@text",
-      "kind": ".am-badge-warning@text",
-      "lastChapter": ".am-badge-secondary@text",
-      "name": "h4 > a@text",
-      "wordCount": ".am-badge-primary@text"
-    },
-    "ruleReview": {},
-    "ruleSearch": {
-      "author": ".book-list-1-author@text## / 文",
-      "bookList": ".am-g > div",
-      "bookUrl": "h4 > a@href",
-      "checkKeyWord": "",
-      "coverUrl": ".am-thumbnail@data-src",
-      "intro": ".book-list-1-intro@text",
-      "kind": ".am-badge-warning@text",
-      "lastChapter": ".am-badge-secondary@text",
-      "name": "h4 > a@text",
-      "wordCount": ".am-badge-primary@text"
-    },
-    "ruleToc": {
-      "chapterList": "class.am-avg-md-2@li",
-      "chapterName": "a@text",
-      "chapterUrl": "a@href",
-      "formatJs": "",
-      "nextTocUrl": ".index-container:nth-child(4) > .index-container-btn:nth-child(3)@href",
-      "updateTime": ""
-    }
+      "type": 0,
+      "charset": "",
+      "method": "get",
+      "enabled": true,
+      "name": "369小说网",
+      "url": "https://www.369book.cc",
+      "searchUrl": "https://www.369book.cc/search/?searchkey={{key}}",
+      "params": "",
+      "header":
+          "{\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\",\n    \"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
+      "exploreUrl":
+          "[\n    \n    {\"title\": \"热读榜\",\"url\":\"/rank/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n       {\"title\": \"❀  书库  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"❀  完结小说  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/quanben/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/quanben/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/quanben/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/quanben/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/quanben/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/quanben/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/quanben/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/quanben/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/quanben/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/quanben/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }}\n]",
+      "lastUpdateTime": "1727576680671",
+      "respondTime": 180000,
+      "ruleBookInfo": {
+        "author": "//a[@class='am-badge am-badge-primary am-radius']@text",
+        "coverUrl": "//img[@class='am-thumbnail']/@src",
+        "intro": "//div[@id='bookintro']@text",
+        "kind": "//a[@class='am-badge am-badge-warning am-radius']@text",
+        "lastChapter": "//div[@class='book-info-last']/a@text",
+        "name": "//h1[@class='am-text-lg']/a@text",
+        "tocUrl": "//a[@class='am-btn am-btn-default am-radius'][1]@href",
+        "wordCount":
+            "//h2[@class='am-text-sm']/span[@class='am-badge am-badge-secondary am-radius']@text",
+        "state": "//span[@class='am-badge am-badge-danger am-radius']@text"
+      },
+      "ruleContent": {
+        "content": "//*[@id=\"chaptercontent\"]/p@text",
+        "nextContentUrl": "//*[@id=\"wrapper\"]/div[4]/div[1]/div/div[1]/a[4]@href",
+        "replaceRegex": ""
+      },
+      "ruleExplore": {
+        "author": ".book-list-1-author@text## / 文",
+        "bookList": ".am-g > div",
+        "bookUrl": "h4 > a@href",
+        "coverUrl": ".am-thumbnail@data-src",
+        "intro": ".book-list-1-intro@text",
+        "kind": ".am-badge-warning@text",
+        "lastChapter": ".am-badge-secondary@text",
+        "name": "h4 > a@text",
+        "wordCount": ".am-badge-primary@text"
+      },
+      "ruleReview": {},
+      "ruleSearch": {
+        "author": "/div[@class='book-list-1-info']/p[@class='book-list-1-author']@text",
+        "bookList":
+            "//div[@class='am-g am-g-collapse']/div[@class='am-u-sm-12 am-u-md-6 am-u-lg-4 book-list-1']",
+        "bookUrl": "/div[@class='book-list-1-info']/h4/a@href",
+        "checkKeyWord": "",
+        "coverUrl": "/a[@class='book-list-1-cover']/img[@class='am-thumbnail lazy']/@data-src",
+        "intro": "/div[@class='book-list-1-info']/p[@class='book-list-1-intro']@text",
+        "kind":
+            "/div[@class='book-list-1-info']/p[@class='book-list-1-tag']/span[@class='am-badge am-badge-warning am-radius']@text",
+        "lastChapter": "",
+        "updateTime":
+            "/div[@class='book-list-1-info']/p[@class='book-list-1-tag']/span[@class='am-badge am-badge-secondary am-radius']@text",
+        "name": "/div[@class='book-list-1-info']/h4/a@text",
+        "wordCount":
+            "/div[@class='book-list-1-info']/p[@class='book-list-1-tag']/span[@class='am-badge am-badge-primary am-radius']@text"
+      },
+      "ruleToc": {
+        "chapterList": "//*[@id=\"wrapper\"]/div[4]/div[1]/div/div[2]/div[2]/ul/li@nodes",
+        "chapterName": "//a@text",
+        "chapterUrl": "//a@href",
+        "formatJs": "",
+        "nextTocUrl": "//div[@class='index-container'][1]/a[@class='index-container-btn']@href",
+        "updateTime": ""
+      }
   },
   {
     "type": 0,
