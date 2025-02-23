@@ -74,7 +74,7 @@
     "charset": "",
     "method": "get",
     "enabled": true,
-    "name": "🔰 全本小说",
+    "name": "全本小说",
     "url": "https://www.quanben.so/",
     "searchUrl": "modules/article/search.php?searchkey={{key}}",
     "bookUrlPattern": "https://www.quanben.so/\\d+_\\d+/",
