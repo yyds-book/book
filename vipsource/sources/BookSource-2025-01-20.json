@@ -11,18 +11,6 @@
     "params": "",
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36\"}",
     "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": "id.info@tag.p.0@tag.a.0@text",
-      "coverUrl": "id.fmimg@tag.img@src",
-      "intro": "id.intro@text",
-      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
-      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-      "name": "id.info@tag.h1@text"
-    },
-    "ruleContent": {
-      "content": "id.content@html",
-      "replaceRegex": "##全本小说网.*"
-    },
     "ruleSearch": {
       "author": "class.s4@text",
       "bookList": "class.novelslistss@tag.li",
@@ -31,11 +19,23 @@
       "lastChapter": "class.s3@tag.a@text",
       "name": "class.s2@tag.a@text"
     },
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@tag.a.0@text",
+      "coverUrl": "id.fmimg@tag.img@src",
+      "intro": "id.intro@text",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "id.info@tag.h1@text"
+    },
     "ruleToc": {
       "chapterList": "id.list@tag.dd@tag.a",
       "chapterName": "text",
       "chapterUrl": "href",
       "nextTocUrl": "option@value"
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "replaceRegex": "##全本小说网.*"
     }
   }
 ]
