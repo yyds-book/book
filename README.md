@@ -25,9 +25,9 @@
 ## 📽️订阅：
 > 仅支持json文件地址或github原始json文件地址
 
-  [点击导入无广告源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/index.json)
+  [点击导入第三方源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/index.json)
 
-  [点击导入第三方源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/yyds.json)
+  [点击导入备用源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/yyds.json)
 
 
 👩‍💻 自定义源，json数据格式示例：
