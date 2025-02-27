@@ -82,8 +82,8 @@
     "articleDetailRule" : {
       "type" : "BookSource"
     },
-    "url":"https://raw.githubusercontent.com/yyds-book/book/main/vipsource/index.html",
-    "path" : "https://raw.githubusercontent.com/yyds-book/book/main/vipsource/",
+    "url":"https://raw.githubusercontent.com/yyds-book/book/main/testsource/index.html",
+    "path" : "https://raw.githubusercontent.com/yyds-book/book/main/testsource/",
     "type" : "HTML",
     "userAgent" : "Computer",
     "discoverRule" : {
