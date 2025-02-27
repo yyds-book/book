@@ -244,7 +244,7 @@
         "nameXpath": "//h3@text",
         "coverXpath": "//img/@data-original",
         "urlXpath": "div/a/@href",
-        "authorXpath": "//p[1]@text"
+        "authorXpath": "//p[1]@text|dart.substring(0,2)"
       },
       "url": "https://www.aidushu8.com/search/",
       "params": "searchkey=%s&searchtype=all&Submit=",
