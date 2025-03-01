@@ -243,7 +243,7 @@
         "introXpath": "//p[2]@text",
         "nameXpath": "//h3@text",
         "coverXpath": "//img/@data-original",
-        "urlXpath": "div/a/@href",
+        "urlXpath": "//div/a/@href",
         "authorXpath": "//p[1]@text|dart.trim()|dart.substring(0,2)"
       },
       "url": "https://www.aidushu8.com/search/",
