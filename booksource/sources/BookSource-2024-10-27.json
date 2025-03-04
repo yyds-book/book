@@ -219,7 +219,7 @@
       "chapterListRule": {
         "nameXpath": "a@text",
         "urlXpath": "a/@href",
-        "listXpath": "//ul[@id='ul_all_chapters']/li"
+        "listXpath": "//ul[@id='ul_all_chapters']/li@nodes"
       },
       "nameXpath": "//meta[@property='og:novel:book_name']/@content",
       "updatedAtXpath": "//meta[@property='og:novel:update_time']/@content",
