@@ -227,7 +227,7 @@
       "coverXpath": "//meta[@property='og:image']/@content"
     },
     "chapterDetailRule": {
-      "contentXpath": "//article[@id='article']",
+      "contentXpath": "//article[@id='article']@text",
       "nextPageURLXpath": "//a[text()=' 下一页']/@href",
       "engine": "HttpRequest"
     },
