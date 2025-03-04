@@ -217,8 +217,8 @@
       "lastChapterXpath": "//meta[@property='og:novel:lastest_chapter_name']/@content",
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "chapterListRule": {
-        "nameXpath": "a@text",
-        "urlXpath": "a/@href",
+        "nameXpath": "//a@text|dart.trim()",
+        "urlXpath": "//a/@href",
         "listXpath": "//ul[@id='ul_all_chapters']/li@nodes"
       },
       "nameXpath": "//meta[@property='og:novel:book_name']/@content",
