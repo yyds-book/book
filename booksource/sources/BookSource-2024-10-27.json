@@ -324,12 +324,12 @@
     "searchRule": {
       "method": "GET",
       "bookListRule": {
-        "urlXpath": "dt/a/@href",
+        "urlXpath": "//dt/a/@href",
         "listXpath": "//div[@class='ranklist']//dl",
-        "nameXpath": "dt/a",
+        "nameXpath": "//dt/a@text",
         "authorXpath": "dd[2]/a@text",
         "coverXpath": "//img/@data-src",
-        "introXpath": "dd[1]@text"
+        "introXpath": "//dd[1]@text"
       },
       "engine": "HttpRequest",
       "url": "http://www.bbiqudu.com/search/?searchkey=%s",
