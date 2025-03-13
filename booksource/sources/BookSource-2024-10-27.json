@@ -310,7 +310,7 @@
       "nameXpath": "//meta[@property='og:novel:book_name']/@content",
       "chapterListRule": {
         "nextPageURLXpath": "//a[text()='下一页']/@onclick&&R[location.href=']&&R[']",
-        "urlXpath": "//a/@href",
+        "urlXpath": "//a@href",
         "listXpath": "//div[@class='all']/ul/li",
         "nameXpath": "//a@text"
       },
@@ -325,7 +325,7 @@
       "method": "GET",
       "bookListRule": {
         "urlXpath": "//dt/a/@href",
-        "listXpath": "//div[@class='ranklist']//dl",
+        "listXpath": "//div[@class='ranklist']//dl@nodes",
         "nameXpath": "//dt/a@text",
         "authorXpath": "//dd[2]/a@text",
         "coverXpath": "//img/@data-src",
