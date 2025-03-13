@@ -311,7 +311,7 @@
       "chapterListRule": {
         "nextPageURLXpath": "//a[text()='下一页']/@onclick&&R[location.href=']&&R[']",
         "urlXpath": "//a@href",
-        "listXpath": "//div[@class='all']/ul/li",
+        "listXpath": "//div[@class='all']/ul/li@nodes",
         "nameXpath": "//a@text"
       },
       "authorXpath": "//meta[@property='og:novel:author']/@content",
