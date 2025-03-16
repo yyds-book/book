@@ -299,10 +299,10 @@
       "purificationRegex": "document.write.+",
       "nextPageURLXpath": "//a[text()=' 下一页']/@href",
       "engine": "WebView",
-      "contentXpath": "//div[@id='chaptercontent']"
+      "contentXpath": "//div[@id='chaptercontent']@text"
     },
     "bookDetailRule": {
-      "chapterPageURLXpath": "//a[text()='更多章节列表 \u003E\u003E']/@href",
+      "chapterPageURLXpath": "//a[text()='更多章节列表 \u003E\u003E']/@href|dart.replace(/2/,/1/)",
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "coverXpath": "//meta[@property='og:image']/@content",
       "lastChapterXpath": "//meta[@property='og:novel:latest_chapter_name']/@content",
@@ -310,7 +310,7 @@
       "nameXpath": "//meta[@property='og:novel:book_name']/@content",
       "chapterListRule": {
         "nextPageURLXpath": "//a[text()='下一页']/@onclick&&R[location.href=']&&R[']",
-        "urlXpath": "//a@href",
+        "urlXpath": "//a/@onclick|dart.replace(location.href=',)|dart.replace(',)",
         "listXpath": "//div[@class='all']/ul/li@nodes",
         "nameXpath": "//a@text"
       },
