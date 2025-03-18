@@ -255,13 +255,13 @@
     "name": "爱笔趣阁",
     "searchRule": {
       "bookListRule": {
-        "listXpath": "//div[@class='bookbox']",
-        "authorXpath": "//div[@class='author'][1]@text&&R[作者：]",
+        "listXpath": "//div[@class='bookbox']@nodes",
+        "authorXpath": "//div[@class='author'][1]@text|dart.replace(作者：,)",
         "nameXpath": "//h4//a@text",
         "coverXpath": "//img/@src",
         "lastChapterXpath": "//div[@class='update']/a@text",
         "urlXpath": "//h4//a/@href",
-        "categoryXpath": "//div[@class='author'][2]@text&&R[类型：]"
+        "categoryXpath": "//div[@class='author'][2]@text|dart.replace(类型：,)"
       },
       "method": "POST",
       "keyEncoding": "UTF-8",
@@ -271,7 +271,7 @@
     },
     "chapterDetailRule": {
       "engine": "HttpRequest",
-      "contentXpath": "//article[@id='article']",
+      "contentXpath": "//article[@id='article']@text",
       "nextPageURLXpath": "//a[text()=' 下一页']/@href"
     },
     "bookURLRegex": "https://www.ibiquge.vip/index/\\d+/",
@@ -283,9 +283,9 @@
       "introXpath": "//meta[@property='og:description']/@content",
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "chapterListRule": {
-        "listXpath": "//div[@class='recommend'][2]//p",
-        "nameXpath": "a@text",
-        "urlXpath": "a/@href",
+        "listXpath": "//div[@class='recommend'][2]//p@nodes",
+        "nameXpath": "//a@text",
+        "urlXpath": "//a/@href",
         "nextPageURLXpath": "//a[text()='下一页']/@href"
       },
       "authorXpath": "//meta[@property='og:novel:author']/@content",
