@@ -168,7 +168,7 @@
       "keyEncoding": "UTF-8"
     }
   },
-  {
+{
     "url": "http://www.xbqgxs.vip/",
     "userAgent": "Computer",
     "bookDetailRule": {
@@ -180,15 +180,15 @@
       "updatedAtXpath": "//meta[@property='og:novel:update_time']/@content",
       "introXpath": "//meta[@property='og:description']/@content",
       "chapterListRule": {
-        "listXpath": "//div[@class='info-chapters flex flex-wrap']/a",
-        "nameXpath": "text()",
-        "urlXpath": "@href"
+        "listXpath": "//div[@class='info-chapters flex flex-wrap']/a@nodes",
+        "nameXpath": "//@text",
+        "urlXpath": "//@href"
       }
     },
     "chapterDetailRule": {
-      "nextPageURLXpath": "//a[text()=' 下一页']/@href",
+      "nextPageURLXpath": "//a[text()='下一页']/@href",
       "engine": "HttpRequest",
-      "contentXpath": "//article[@id='article']"
+      "contentXpath": "//article[@id='article']@text"
     },
     "searchRule": {
       "params": "searchkey=%s&Submit=",
@@ -198,8 +198,8 @@
         "nameXpath": "//h3@text",
         "introXpath": "//div[@class='intro indent']@text",
         "coverXpath": "//img/@data-original",
-        "listXpath": "//div[@class='category-div']",
-        "urlXpath": "a/@href",
+        "listXpath": "//div[@class='category-div']@nodes",
+        "urlXpath": "//a/@href|dart.match(\\d+_\\d+/)",
         "authorXpath": "//span@text"
       },
       "method": "POST",
