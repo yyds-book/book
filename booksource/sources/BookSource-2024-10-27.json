@@ -272,7 +272,7 @@
     "chapterDetailRule": {
       "engine": "HttpRequest",
       "contentXpath": "//article[@id='article']@text",
-      "nextPageURLXpath": "//a[text()=' 下一页']/@href"
+      "nextPageURLXpath": "//a[text()='下一页']/@href"
     },
     "bookURLRegex": "https://www.ibiquge.vip/index/\\d+/",
     "url": "https://www.ibiquge.vip/",
