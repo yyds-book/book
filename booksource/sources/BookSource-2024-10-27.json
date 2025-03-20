@@ -379,16 +379,16 @@
       "engine": "HttpRequest"
     }
   },
-  {
+{
     "searchRule": {
       "keyEncoding": "UTF-8",
       "bookListRule": {
         "authorXpath": "//span@text",
         "introXpath": "//div[@class='intro indent']@text",
         "nameXpath": "//h3@text",
-        "listXpath": "//div[@class='category-div']",
+        "listXpath": "//div[@class='category-div']@nodes",
         "coverXpath": "//img/@data-original",
-        "urlXpath": "a/@href"
+        "urlXpath": "//a/@href|dart.match(\\d+_\\d+/)"
       },
       "url": "https://www.seebook.net/search/",
       "method": "POST",
@@ -403,9 +403,9 @@
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "updatedAtXpath": "//meta[@property='og:novel:update_time']/@content",
       "chapterListRule": {
-        "listXpath": "//div[@id='zhangjie']/a",
-        "urlXpath": "@href",
-        "nameXpath": "text()"
+        "listXpath": "//div[@id='zhangjie']/a@nodes",
+        "urlXpath": "//@href",
+        "nameXpath": "//@text",
       },
       "authorXpath": "//meta[@property='og:novel:author']/@content",
       "introXpath": "//meta[@property='og:description']/@content",
@@ -416,7 +416,7 @@
     "bookURLRegex": "https://www.seebook.net/\\d+_\\d+/",
     "chapterDetailRule": {
       "engine": "HttpRequest",
-      "contentXpath": "//div[@id='neirong']",
+      "contentXpath": "//div[@id='neirong']@text",
       "nextPageURLXpath": "//a[text()=' 下一页']/@href"
     }
   }
