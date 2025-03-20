@@ -405,7 +405,7 @@
       "chapterListRule": {
         "listXpath": "//div[@id='zhangjie']/a@nodes",
         "urlXpath": "//@href",
-        "nameXpath": "//@text",
+        "nameXpath": "//@text"
       },
       "authorXpath": "//meta[@property='og:novel:author']/@content",
       "introXpath": "//meta[@property='og:description']/@content",
