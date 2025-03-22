@@ -133,18 +133,18 @@
     "bookURLRegex": "http://m.wujixsw.org/\\d+_\\d+/",
     "chapterDetailRule": {
       "purificationRegex": "『章节错误，点此举报』|『加入书签，方便阅读』|天才一秒记住本站地址.+|（本章未完，请点击下一页继续阅读）",
-      "contentXpath": "//div[@id='chaptercontent']",
+      "contentXpath": "//div[@id='chaptercontent']@text|dart.replace(『章节错误，点此举报』\n,)|dart.replace(天才一秒记住本站地址：[无极小说]http://m.wujixsw.cc/最快更新！无广告！,)|dart.replace(（本章未完，请点击下一页继续阅读）,)|dart.trim()",
       "engine": "HttpRequest",
-      "nextPageURLXpath": "//a[text()='下一页']/@href"
+      "nextPageURLXpath": "//a[text()='下一页']/@href|dart.match(\\d+_\\d+/\\d+_\\d+.html)"
     },
     "bookDetailRule": {
       "lastChapterXpath": "//meta[@property='og:novel:latest_chapter_name']/@content",
       "chapterPageURLXpath": "//a[text()='章节列表']/@href",
       "nameXpath": "//meta[@property='og:novel:book_name']/@content",
       "chapterListRule": {
-        "listXpath": "//div[@id='chapterlist']/p&&S[1]",
-        "urlXpath": "a/@href",
-        "nameXpath": "a@text"
+        "listXpath": "//div[@id='chapterlist']/p@nodes|dart.sublist(1)",
+        "urlXpath": "//a/@href",
+        "nameXpath": "//a@text"
       },
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "introXpath": "//meta[@property='og:description']/@content",
@@ -159,11 +159,11 @@
       "method": "GET",
       "engine": "HttpRequest",
       "bookListRule": {
-        "nameXpath": "a/p@text",
-        "authorXpath": "p[1]/a[2]@text",
-        "listXpath": "//div[contains(@class, 'hot_sale')]",
-        "urlXpath": "a/@href",
-        "lastChapterXpath": "p[2]/a@text"
+        "nameXpath": "//a/p@text|dart.trim()",
+        "authorXpath": "//p[1]/a[2]@text",
+        "listXpath": "//div[contains(@class, 'hot_sale')]@nodes",
+        "urlXpath": "//a/@href|dart.match(\\d+_\\d+/)",
+        "lastChapterXpath": "//p[2]/a@text|dart.trim()"
       },
       "keyEncoding": "UTF-8"
     }
@@ -374,7 +374,10 @@
     },
     "userAgent": "Computer",
     "bookURLRegex": "https://www.fd80s.com/\\d+/\\d+/",
-    "chapterDetailRule": {"contentXpath": "//div[@id='chaptercontent']", "engine": "HttpRequest"}
+    "chapterDetailRule": {
+      "contentXpath": "//div[@id='chaptercontent']",
+      "engine": "HttpRequest"
+    }
   },
   {
     "searchRule": {
