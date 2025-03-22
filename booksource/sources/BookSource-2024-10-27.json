@@ -345,10 +345,10 @@
       "categoryXpath": "//meta[@property='og:novel:category']/@content",
       "coverXpath": "//meta[@property='og:image']/@content",
       "chapterListRule": {
-        "urlXpath": "a/@onclick&&R[location.href=']&&R[']",
+        "urlXpath": "//a/@onclick&&R[location.href=']&&R[']",
         "nextPageURLXpath": "//a[text()='下一页']/@href",
         "listXpath": "//div[@class='chapterlist']//li",
-        "nameXpath": "a@text"
+        "nameXpath": "//a@text"
       },
       "authorXpath": "//meta[@property='og:novel:author']/@content",
       "updatedAtXpath": "//meta[@property='og:novel:update_time']/@content",
@@ -361,12 +361,12 @@
       "url": "https://www.fd80s.com/search",
       "keyEncoding": "UTF-8",
       "bookListRule": {
-        "listXpath": "//div[@class='ranklist']//dl",
+        "listXpath": "//div[@class='ranklist']//dl@nodes",
         "introXpath": "//dd[1]@text",
         "authorXpath": "//dd[2]/a@text",
         "coverXpath": "//img/@data-src",
-        "urlXpath": "a/@href",
-        "nameXpath": "dt/a"
+        "urlXpath": "//a/@href|dart.match(https://www.fd80s.com/\\d+/\\d+/)",
+        "nameXpath": "//dt/a@text"
       },
       "engine": "HttpRequest",
       "method": "POST",
@@ -374,10 +374,7 @@
     },
     "userAgent": "Computer",
     "bookURLRegex": "https://www.fd80s.com/\\d+/\\d+/",
-    "chapterDetailRule": {
-      "contentXpath": "//div[@id='chaptercontent']",
-      "engine": "HttpRequest"
-    }
+    "chapterDetailRule": {"contentXpath": "//div[@id='chaptercontent']", "engine": "HttpRequest"}
   },
   {
     "searchRule": {
