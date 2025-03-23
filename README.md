@@ -29,10 +29,6 @@
 > [点击导入书源](https://github.com/yyds-book/book/blob/main/testsource/sources/BookSource-2025-01-20.json)
 
 
-
-## 📽️订阅：
-> 仅支持json文件地址或github原始json文件地址
-
 ## 💡温馨提示
 本APP属于个人开发学习项目(非商业用途)，不以任何盈利为目的。APP仅供学习探索搜索引擎相关技术，严禁用于商业目的。
 
