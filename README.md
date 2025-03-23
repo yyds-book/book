@@ -25,7 +25,7 @@
 ## 书源来源于网络，后续会持续收集
 
 > 包含10个书源：3ff小说网、BL小说网、多多书院、戊戟小说网、新笔趣阁小说网、爱看书吧、爱笔趣阁、笔趣读、笔趣阁fd、笔趣阁小说网
-> [点击导入书源](https://github.com/yyds-book/book/blob/main/testsource/sources/BookSource-2025-01-20.json)
+> [点击导入书源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/testsource/sources/BookSource-2025-01-20.json)
 
 
 ## 💡温馨提示
