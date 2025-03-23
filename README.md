@@ -17,10 +17,9 @@
 
 
 ##  TestFlight
+## 仅有**10000**个名额，先到先得
 
-> 仅有**10000**个名额，先到先得
-
-[点击进入 TestFlight 内测](https://testflight.apple.com/join/NCjMVRrX)
+>苹果iOS用户 TestFlight 内测[点击下载](https://testflight.apple.com/join/NCjMVRrX)
 
 ## 📽️书源：
 ## 书源来源于网络，后续会持续收集
