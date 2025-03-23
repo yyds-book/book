@@ -22,18 +22,17 @@
 
 [点击进入 TestFlight 内测](https://testflight.apple.com/join/NCjMVRrX)
 
-## 📽️订阅：
+## 📽️书源：
+书源来源于网络，后续会持续收集
 > 仅支持json文件地址或github原始json文件地址
 
-  [点击导入第三方源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/index.json)
+包含10个书源：3ff小说网、BL小说网、多多书院、戊戟小说网、新笔趣阁小说网、爱看书吧、爱笔趣阁、笔趣读、笔趣阁fd、笔趣阁小说网
+> [点击导入书源](https://testflight.apple.com/join/NCjMVRrX)
 
-  [点击导入备用源](https://raw.githubusercontent.com/yyds-book/book/refs/heads/main/yyds.json)
 
 
-👩‍💻 自定义源，json数据格式示例：
-
-> [{"name": "","url": ""},{"name": "","url": ""}]
-
+## 📽️订阅：
+> 仅支持json文件地址或github原始json文件地址
 
 ## 💡温馨提示
 本APP属于个人开发学习项目(非商业用途)，不以任何盈利为目的。APP仅供学习探索搜索引擎相关技术，严禁用于商业目的。
