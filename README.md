@@ -19,9 +19,9 @@
 
 |               首页                |               发现                |
 | :-------------------------------: | :-------------------------------: |
-|    ![](/doc/image/books.jpg)    |  ![](/doc/image/discover.jpg)   |
+|    ![](/doc/image/WechatIMG13.jpg)    |  ![](/doc/image/WechatIMG14.jpg)   |
 |             书籍详情              |             小说阅读              |
-| ![](/doc/image/book-detail.jpg) | ![](/doc/image/book-reader.jpg) |
+| ![](/doc/image/WechatIMG13.jpg) | ![](/doc/image/WechatIMG15.jpg) |
 
 </div>
 
