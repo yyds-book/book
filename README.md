@@ -1,4 +1,4 @@
-<h2 align="center">万源阅读：定制化的网页内容解析与展示工具</h2>
+<h2 align="center">定制化的网页内容解析与展示工具</h2>
 
 <p align="center">
 <!-- <a href="https://github.com/CalsRanna/source_parser/actions"><img src="https://github.com/CalsRanna/source_parser/workflows/Flutter/badge.svg" alt="Build Status"></a> -->
